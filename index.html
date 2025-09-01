@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum</title>
+  <meta name="description" content="Explore the Louvre Museum online. Discover world-famous artworks, virtual tours, history, and cultural treasures of Paris's iconic museum.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32-BnVvASiq.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon-CMgfKCFx.png">
+  <link rel="manifest" href="./assets/site-BwHFeIBa.webmanifest">
+  <link rel="preload" href="./assets/Forum-Regular-Du216z_T.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/Roboto-Regular-Cq7d5a1R.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" crossorigin src="./assets/index-CSRqQt3g.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/vendor-B6sp4i0v.js">
+  <link rel="stylesheet" crossorigin href="./assets/vendor-DV8PrLMj.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-Wlt40dPs.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav nav">
+        <div class="nav__logo-wrapper">
+          <a class="nav__link" href="#">
+            <svg class="nav__svg" width="50" height="34">
+              <use href="./assets/sprite-1D-C3cSj.svg#logo"></use>
+            </svg>
+            <span class="nav__text">
+              Louvre
+            </span>
+          </a>
+
+          <ul class="nav__list site-list site-list--close">
+            <li>
+              <a class="site-list__link" href="#visiting">
+                Visiting
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#explore">
+                Explore
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#video">
+                Video
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#gallery">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#tickets">
+                Tickets
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#contacts">
+                Contacts
+              </a>
+            </li>
+
+            <li>
+              <ul class="nav__img-menu img-menu img-menu--close">
+                <li class="img-menu__item img-menu__item--one">
+                  <a class="img-menu__link">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./assets/nav-1-tablet-Ci-ERCXL.webp 1x" width="319" height="161">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="./assets/nav-1-tablet-CquCPOgf.jpg 1x" width="319" height="161">
+                      <source type="image/webp" media="(min-width: 420px)" srcset="./assets/nav-1-CJwLzSGQ.webp 1x" width="95" height="95">
+                      <source type="image/jpeg" media="(min-width: 420px)" srcset="./assets/nav-1-D-eaYzNT.jpg 1x" width="95" height="95">
+                      <img class="img-menu__img" src="./assets/nav-1-D-eaYzNT.jpg" alt="first img from navigation" loading="lazy">
+                    </picture>
+                  </a>
+                </li>
+                <li class="img-menu__item img-menu__item--two">
+                  <a class="img-menu__link">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./assets/nav-2-tablet-CaADS7V6.webp 1x" width="658" height="194">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="./assets/nav-2-tablet-CqzyIsAb.jpg 1x" width="658" height="194">
+                      <source type="image/webp" media="(min-width: 420px)" srcset="data:image/webp;base64,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 1x" width="95" height="95">
+                      <source type="image/jpeg" media="(min-width: 420px)" srcset="./assets/nav-2-DytJwVK1.jpg 1x" width="95" height="95">
+                      <img class="img-menu__img" src="./assets/nav-2-DytJwVK1.jpg" alt="second img from navigation" loading="lazy">
+                    </picture>
+                  </a>
+                </li>
+                <li class="img-menu__item img-menu__item--three">
+                  <a class="img-menu__link">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./assets/nav-3-tablet-CVr_4d5A.webp 1x" width="319" height="161">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="./assets/nav-3-tablet-E8jBh5LF.jpg 1x" width="319" height="161">
+                      <source type="image/webp" media="(min-width: 420px)" srcset="data:image/webp;base64,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 1x" width="95" height="95">
+                      <source type="image/jpeg" media="(min-width: 420px)" srcset="./assets/nav-3-B-bBOhSv.jpg 1x" width="95" height="95">
+                      <img class="img-menu__img" src="./assets/nav-3-B-bBOhSv.jpg" alt="third img from navigation" loading="lazy">
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul class="nav__social-menu social social-menu social-menu--close">
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">youtube link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/sprite-1D-C3cSj.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">instagram link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/sprite-1D-C3cSj.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">facebook link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/sprite-1D-C3cSj.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">twitter / X link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/sprite-1D-C3cSj.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">pinterest link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/sprite-1D-C3cSj.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="site-list__burger site-list__burger--open" type="button" aria-label="burger menu">
+            <svg class="site-list__svg site-list__open" width="32" height="18">
+              <use href="./assets/sprite-1D-C3cSj.svg#burger"></use>
+            </svg>
+
+            <svg class="site-list__svg site-list__close" width="24" height="24">
+              <use href="./assets/sprite-1D-C3cSj.svg#burger-close"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+    <section class="welcome">
+      <h1 class="visually-hidden">Louvre</h1>
+      <div class="welcome__wrapper">
+        <div class="welcome__text">
+          <h2 class="welcome__title">
+            Welcome<br>to the Louvre
+          </h2>
+          <p class="welcome__description">
+            From the castle to the museum
+          </p>
+          <a class="welcome__button button" href="#">
+            Discover the Louvre
+          </a>
+        </div>
+        <div class="welcome__slider-container">
+          <div class="welcome__slider-wrapper swiper welcome-swiper">
+            <ul class="welcome__slider-list slider-list swiper-wrapper welcome-swiper__list">
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/1-dHWYsKna.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/1-CLLsC5zu.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/1-CLLsC5zu.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/2-nNowBNi4.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/2-Bk6BFN5c.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/2-Bk6BFN5c.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/3-DV7H2-I5.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/3-CAX1FYO9.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/3-CAX1FYO9.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/4-BDGp6sRY.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/4-DHFnc08s.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/4-DHFnc08s.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/5-BoAw6SBE.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/5-CmrmYMQI.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/5-CmrmYMQI.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      <div class="welcome__slider hero-slider">
+        <span class="hero-slider__text" id="hero-slider-text">01&nbsp;|&nbsp;05</span>
+        <div class="hero-slider__dots swiper-pagination hero-slider__pagination"></div>
+        <div class="hero-slider__arrows">
+          <span class="hero-slider__arrow swiper-button-prev hero-slider__arrow--left">
+            <svg class="hero-slider__svg">
+              <use href="./assets/sprite-1D-C3cSj.svg#arrow"></use>
+            </svg>
+          </span>
+          <span class="hero-slider__arrow hero-slider__arrow--right swiper-button-next">
+            <svg class="hero-slider__svg">
+              <use href="./assets/sprite-1D-C3cSj.svg#arrow"></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>
+    </div>
+  </header>
+  <main>
+    <section class="visiting" id="visiting">
+      <div class="container">
+        <div class="visiting__wrapper">
+          <h2>Virtual tour</h2>
+          <div class="visiting__tours">
+            <ul class="visiting__list">
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/tour1@1x-BuOkuut6.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/tour1@1x-DXg19EzS.jpg 1x">
+                    <img src="./assets/img/tours/tour1@1x.jpg 1x" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Royal Palace</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/tour2@1x-CyCkmhvu.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/tour2@1x-BSc2xC4h.jpg 1x">
+                    <img src="./assets/img/tours/tour2@1x.jpg 1x" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Denon Wing</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/tour3@1x-CMs5l_D4.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/tour3@1x-Ct1WEhRZ.jpg 1x">
+                    <img src="./assets/tour3@1x-Ct1WEhRZ.jpg" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Colonnade Perrault</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/tour4@1x-Dm3WsSyZ.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/tour4@1x-Dcea-D08.jpg 1x">
+                    <img src="./assets/tour4@1x-Dcea-D08.jpg" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Greek hall</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/tour5@1x-BQyVJOF6.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/tour5@1x-B21OWan4.jpg 1x">
+                    <img src="./assets/tour5@1x-B21OWan4.jpg" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Mona Lisa</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/tour6@1x-iJbnP71W.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/tour6@1x-C1E2EZw0.jpg 1x">
+                    <img src="./assets/tour6@1x-C1E2EZw0.jpg" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Night Palace</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="explore">
+      <div class="container">
+        <div class="explore__sections">
+          <div class="explore__text">
+            <h2>Picture explore</h2>
+            <div class="explore__description">
+              <p>
+                Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
+              </p>
+              <p>
+                It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.
+              </p>
+              <p>
+                The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.
+              </p>
+            </div>
+          </div>
+          <div class="explore__slider" data-container>
+            <div class="explore__picture-container explore__picture-container--before" data-image1>
+              <div class="explore__img">
+                <picture>
+                  <source type="image/webp" srcset="./assets/before-DpxH-9VF.webp 1x">
+                  <source type="image/jpeg" srcset="./assets/before-BbqTJUfc.jpg 1x">
+                  <img class="explore__picture" src="./assets/before-BbqTJUfc.jpg" alt="first slider image" loading="lazy">
+                </picture>
+              </div>
+            </div>
+            <div class="explore__picture-container explore__picture-container--after" data-image2>
+              <div class="explore__img">
+                <picture>
+                  <source type="image/webp" srcset="./assets/after-BpIJ3d4x.webp 1x">
+                  <source type="image/jpeg" srcset="./assets/after-2vI4YzzF.jpg 1x">
+                  <img class="explore__picture" src="./assets/after-2vI4YzzF.jpg" alt="second slider image" loading="lazy">
+                </picture>
+              </div>
+            </div>
+            <button class="explore__button" type="button" data-button aria-label="button slider"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" id="video">
+      <div class="container">
+        <div class="video__text-wrapper">
+          <h2>VIDEO JOURNEY</h2>
+          <p>
+            Enter and visit one of the most famous museums in the world and enjoy<br>
+            masterpieces such as Mona Lisa or Hammurabi’s Code
+          </p>
+        </div>
+        <div class="video__main-wrapper">
+          <div class="video__main">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)" srcset="./assets/poster0-desktop-DZgI_lFI.webp 1x" width="1440" height="650">
+              <source type="image/jpeg" media="(min-width: 1920px)" srcset="./assets/poster0-desktop-BMnB2NML.jpg 1x" width="1440" height="650">
+              <img class="video__cover" src="./assets/poster0-mobile-DlrUGHBU.jpg" alt="Main video image" width="380" height="172" loading="lazy">
+            </picture>
+            <button class="video__play-button" type="button" aria-label="Play main video">
+              <span class="visually-hidden">play main video</span>
+            </button>
+            <iframe
+              id="player-main"
+              src="https://www.youtube.com/embed/aWmJ5DgyWPI?enablejsapi=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0&showinfo=0&autohide=1"
+              title="YouTube video player"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video__main-panel">
+            <button class="video__control-button video__control-button--play" type="button" aria-label="Play or pause video">
+              <span class="visually-hidden">play video in panel</span>
+              <svg class="video__control-icon">
+                <use href="./assets/sprite-1D-C3cSj.svg#play-panel"></use>
+              </svg>
+            </button>
+            <input type="range" class="video__bar video__seek-bar" min="0" max="100" value="54" aria-label="Seek video">
+            <button class="video__control-button video__control-button--volume" type="button" aria-label="Toggle mute">
+              <span class="visually-hidden">sound icon in panel</span>
+              <svg class="video__control-icon video__control-icon--sound">
+                <use href="./assets/sprite-1D-C3cSj.svg#sound"></use>
+              </svg>
+            </button>
+            <input type="range" class="video__bar video__volume-bar" min="0" max="100" value="43" aria-label="Adjust volume">
+            <button class="video__control-button video__control-button--fullscreen" type="button" aria-label="Toggle fullscreen">
+              <svg class="video__control-icon video__control-icon--fullscreen">
+                <use href="./assets/sprite-1D-C3cSj.svg#fullscreen"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="video__slider">
+          <div class="video__iframes">
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="data:image/webp;base64,UklGRpYDAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMIAAAABgBDZdt3mQngQxMRikjCQGSgMZAaCIAiGIAgPwoPwkrTV504BRMQEYDKmpuZuveWI9fIyH9Ya1sjlC2tYcJov1cfU5cvLmNy+sctI9633wOWbyx9P337+EnSfyY/qhAVAcEoBKkcGlMMQnTRmltRYWmdRYzH/d43FlKU3lpZYcmQ5YBwKZI4KCEcAUBgqAIjt0/AD574Hfi+7Cv6+93QMSt9xywhQ1hXMPnWNJcyHuqIIloaqY5YF64/curmbtnRgElZQOCCuAgAA0AwAnQEqKAAoAD5tKpBFpCKhlx3+ZEAGxLUAVhmOQIfbr3O5MZgN5rn1PLaC8Sfv1yzOBmmAmkePrUD6QBY/g3q9fvSGc888zPorZS1RqVP64a1KUWmtpSQkLuOmfLu5N63ZqJCU9I6XeR/Rt96QAP7TGI8Qtks+TsrNvU4WB9oyK9/w5X/xEbqmiHodU5W8f8uP7JDLCL7rvlQy8J4zzadafAp1e9Ofmivmyn9CoK2IcDEpTwLJbSFAY0sTTtgCbb/sJY5q5pglj0ioxTkNDyTH9GF36xX6t+y9TsJNJ3JJXpTjd53B8Ap0xdEgmcd9NrEjn7u19ottdrJOSXGtSr3GGQLA/WseyVbM65SjugYWk+/HWS5lc2Qx8eqWw4/L9LYtJbSpMS820mNlLPASXj59bNwi93NjrDgbrrNY8LhIEurA84GJnWa5hTAp6YTvdKjhnWpFJoajv/o4p3YSlerQdqObqsq2m1euFoFcEuVtrXUyutToa0Aiplwm4//WkCKEbs05zqWHQF2+vuTwqmeBxtR1sgfoBlvkGv/kWsBXN4VxvAx0r5eXIPvSIjDYr1kLMpiaCbOMNvrVJrgwuS0bM1ze5dh/XaD7aJ/0HgEGg2J2SSr+8tfTdpSgja3BugXgN9ToMSz6ihDCi69nknrKt/JWjxAh5gPBo9AtWOX77ZTVpWGIt5kHbPN3hCvjzW/dHGmNq2MauXU0hklsyircASU8AZj6BhntJ0b06hqNGN+Z8mz754veky2hUv0VBKr2+j/stYWXdBO1SIcNju0C/bAFjOj0633uCxQz/7FQdjbXUEW/dsgQg9UuO4QNUA+XhTnMDEsJZythOC6hGYLzmu6HerLA6iFsHnSygZC4BQoHh+CO8U47asDWcSxpLC/DZYreaG7SJbWp0AA= 1x" type="image/webp">
+                    <source srcset="./assets/lisa-BirsQk5d.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/lisa-BirsQk5d.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Exposition - Le Corps et l’Ame. De Dona...</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/poster3-B-b1C65K.webp 1x" type="image/webp">
+                <source srcset="./assets/poster3-Dpr2hsLX.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/poster3-Dpr2hsLX.jpg" alt="Video 1 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 1" data-video="1">
+                <span class="visually-hidden">Play video 1</span>
+              </button>
+              <iframe 
+                id="player-1"
+                src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=VaP-7wrEVqw3Xa5w&enablejsapi=1&controls=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&showinfo=0&autohide=1" 
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="data:image/webp;base64,UklGRpYDAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMIAAAABgBDZdt3mQngQxMRikjCQGSgMZAaCIAiGIAgPwoPwkrTV504BRMQEYDKmpuZuveWI9fIyH9Ya1sjlC2tYcJov1cfU5cvLmNy+sctI9633wOWbyx9P337+EnSfyY/qhAVAcEoBKkcGlMMQnTRmltRYWmdRYzH/d43FlKU3lpZYcmQ5YBwKZI4KCEcAUBgqAIjt0/AD574Hfi+7Cv6+93QMSt9xywhQ1hXMPnWNJcyHuqIIloaqY5YF64/curmbtnRgElZQOCCuAgAA0AwAnQEqKAAoAD5tKpBFpCKhlx3+ZEAGxLUAVhmOQIfbr3O5MZgN5rn1PLaC8Sfv1yzOBmmAmkePrUD6QBY/g3q9fvSGc888zPorZS1RqVP64a1KUWmtpSQkLuOmfLu5N63ZqJCU9I6XeR/Rt96QAP7TGI8Qtks+TsrNvU4WB9oyK9/w5X/xEbqmiHodU5W8f8uP7JDLCL7rvlQy8J4zzadafAp1e9Ofmivmyn9CoK2IcDEpTwLJbSFAY0sTTtgCbb/sJY5q5pglj0ioxTkNDyTH9GF36xX6t+y9TsJNJ3JJXpTjd53B8Ap0xdEgmcd9NrEjn7u19ottdrJOSXGtSr3GGQLA/WseyVbM65SjugYWk+/HWS5lc2Qx8eqWw4/L9LYtJbSpMS820mNlLPASXj59bNwi93NjrDgbrrNY8LhIEurA84GJnWa5hTAp6YTvdKjhnWpFJoajv/o4p3YSlerQdqObqsq2m1euFoFcEuVtrXUyutToa0Aiplwm4//WkCKEbs05zqWHQF2+vuTwqmeBxtR1sgfoBlvkGv/kWsBXN4VxvAx0r5eXIPvSIjDYr1kLMpiaCbOMNvrVJrgwuS0bM1ze5dh/XaD7aJ/0HgEGg2J2SSr+8tfTdpSgja3BugXgN9ToMSz6ihDCi69nknrKt/JWjxAh5gPBo9AtWOX77ZTVpWGIt5kHbPN3hCvjzW/dHGmNq2MauXU0hklsyircASU8AZj6BhntJ0b06hqNGN+Z8mz754veky2hUv0VBKr2+j/stYWXdBO1SIcNju0C/bAFjOj0633uCxQz/7FQdjbXUEW/dsgQg9UuO4QNUA+XhTnMDEsJZythOC6hGYLzmu6HerLA6iFsHnSygZC4BQoHh+CO8U47asDWcSxpLC/DZYreaG7SJbWp0AA= 1x" type="image/webp">
+                    <source srcset="./assets/lisa-BirsQk5d.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/lisa-BirsQk5d.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Au Louvre ! La Venus de Milo</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/poster1-JU0eiPS_.webp 1x" type="image/webp">
+                <source srcset="./assets/poster1-Z9ahCa3G.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/poster1-Z9ahCa3G.jpg" alt="Video 2 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 2" data-video="2">
+                <span class="visually-hidden">Play video 2</span>
+              </button>
+              <iframe 
+                id="player-2"
+                src="https://www.youtube.com/embed/Vi5D6FKhRmo?si=ncHEYynY-zxpK3Ks&enablejsapi=1&controls=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&showinfo=0&autohide=1" 
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="data:image/webp;base64,UklGRpYDAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMIAAAABgBDZdt3mQngQxMRikjCQGSgMZAaCIAiGIAgPwoPwkrTV504BRMQEYDKmpuZuveWI9fIyH9Ya1sjlC2tYcJov1cfU5cvLmNy+sctI9633wOWbyx9P337+EnSfyY/qhAVAcEoBKkcGlMMQnTRmltRYWmdRYzH/d43FlKU3lpZYcmQ5YBwKZI4KCEcAUBgqAIjt0/AD574Hfi+7Cv6+93QMSt9xywhQ1hXMPnWNJcyHuqIIloaqY5YF64/curmbtnRgElZQOCCuAgAA0AwAnQEqKAAoAD5tKpBFpCKhlx3+ZEAGxLUAVhmOQIfbr3O5MZgN5rn1PLaC8Sfv1yzOBmmAmkePrUD6QBY/g3q9fvSGc888zPorZS1RqVP64a1KUWmtpSQkLuOmfLu5N63ZqJCU9I6XeR/Rt96QAP7TGI8Qtks+TsrNvU4WB9oyK9/w5X/xEbqmiHodU5W8f8uP7JDLCL7rvlQy8J4zzadafAp1e9Ofmivmyn9CoK2IcDEpTwLJbSFAY0sTTtgCbb/sJY5q5pglj0ioxTkNDyTH9GF36xX6t+y9TsJNJ3JJXpTjd53B8Ap0xdEgmcd9NrEjn7u19ottdrJOSXGtSr3GGQLA/WseyVbM65SjugYWk+/HWS5lc2Qx8eqWw4/L9LYtJbSpMS820mNlLPASXj59bNwi93NjrDgbrrNY8LhIEurA84GJnWa5hTAp6YTvdKjhnWpFJoajv/o4p3YSlerQdqObqsq2m1euFoFcEuVtrXUyutToa0Aiplwm4//WkCKEbs05zqWHQF2+vuTwqmeBxtR1sgfoBlvkGv/kWsBXN4VxvAx0r5eXIPvSIjDYr1kLMpiaCbOMNvrVJrgwuS0bM1ze5dh/XaD7aJ/0HgEGg2J2SSr+8tfTdpSgja3BugXgN9ToMSz6ihDCi69nknrKt/JWjxAh5gPBo9AtWOX77ZTVpWGIt5kHbPN3hCvjzW/dHGmNq2MauXU0hklsyircASU8AZj6BhntJ0b06hqNGN+Z8mz754veky2hUv0VBKr2+j/stYWXdBO1SIcNju0C/bAFjOj0633uCxQz/7FQdjbXUEW/dsgQg9UuO4QNUA+XhTnMDEsJZythOC6hGYLzmu6HerLA6iFsHnSygZC4BQoHh+CO8U47asDWcSxpLC/DZYreaG7SJbWp0AA= 1x" type="image/webp">
+                    <source srcset="./assets/lisa-BirsQk5d.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/lisa-BirsQk5d.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Promenade dans les collections mesop...</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/poster2-CAomZ0tI.webp 1x" type="image/webp">
+                <source srcset="./assets/poster2-B80q9J6W.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/poster2-B80q9J6W.jpg" alt="Video 3 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 3" data-video="3">
+                <span class="visually-hidden">Play video 3</span>
+              </button>
+              <iframe 
+                id="player-3"
+                src="https://www.youtube.com/embed/NOhDysLnTvY?si=NlbYp_1vJNSvtYQr&enablejsapi=1&controls=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&showinfo=0&autohide=1" 
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                loading="lazy"
+              ></iframe>
+            </div>
+
+          <div class="video__thumbnail">
+            <div class="video__panel-top">
+              <a class="video__panel-wrapper" href="#">
+                <picture>
+                  <source srcset="data:image/webp;base64,UklGRpYDAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMIAAAABgBDZdt3mQngQxMRikjCQGSgMZAaCIAiGIAgPwoPwkrTV504BRMQEYDKmpuZuveWI9fIyH9Ya1sjlC2tYcJov1cfU5cvLmNy+sctI9633wOWbyx9P337+EnSfyY/qhAVAcEoBKkcGlMMQnTRmltRYWmdRYzH/d43FlKU3lpZYcmQ5YBwKZI4KCEcAUBgqAIjt0/AD574Hfi+7Cv6+93QMSt9xywhQ1hXMPnWNJcyHuqIIloaqY5YF64/curmbtnRgElZQOCCuAgAA0AwAnQEqKAAoAD5tKpBFpCKhlx3+ZEAGxLUAVhmOQIfbr3O5MZgN5rn1PLaC8Sfv1yzOBmmAmkePrUD6QBY/g3q9fvSGc888zPorZS1RqVP64a1KUWmtpSQkLuOmfLu5N63ZqJCU9I6XeR/Rt96QAP7TGI8Qtks+TsrNvU4WB9oyK9/w5X/xEbqmiHodU5W8f8uP7JDLCL7rvlQy8J4zzadafAp1e9Ofmivmyn9CoK2IcDEpTwLJbSFAY0sTTtgCbb/sJY5q5pglj0ioxTkNDyTH9GF36xX6t+y9TsJNJ3JJXpTjd53B8Ap0xdEgmcd9NrEjn7u19ottdrJOSXGtSr3GGQLA/WseyVbM65SjugYWk+/HWS5lc2Qx8eqWw4/L9LYtJbSpMS820mNlLPASXj59bNwi93NjrDgbrrNY8LhIEurA84GJnWa5hTAp6YTvdKjhnWpFJoajv/o4p3YSlerQdqObqsq2m1euFoFcEuVtrXUyutToa0Aiplwm4//WkCKEbs05zqWHQF2+vuTwqmeBxtR1sgfoBlvkGv/kWsBXN4VxvAx0r5eXIPvSIjDYr1kLMpiaCbOMNvrVJrgwuS0bM1ze5dh/XaD7aJ/0HgEGg2J2SSr+8tfTdpSgja3BugXgN9ToMSz6ihDCi69nknrKt/JWjxAh5gPBo9AtWOX77ZTVpWGIt5kHbPN3hCvjzW/dHGmNq2MauXU0hklsyircASU8AZj6BhntJ0b06hqNGN+Z8mz754veky2hUv0VBKr2+j/stYWXdBO1SIcNju0C/bAFjOj0633uCxQz/7FQdjbXUEW/dsgQg9UuO4QNUA+XhTnMDEsJZythOC6hGYLzmu6HerLA6iFsHnSygZC4BQoHh+CO8U47asDWcSxpLC/DZYreaG7SJbWp0AA= 1x" type="image/webp">
+                  <source srcset="./assets/lisa-BirsQk5d.png 1x" type="image/jpeg">
+                  <img class="video__panel-img" src="./assets/lisa-BirsQk5d.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                </picture>
+                <span class="video__panel-span">Petits contes de Printemps - La ruse du Renard</span>
+              </a>
+              <span class="video__panel-dots"></span>
+            </div>
+            <picture>
+              <source srcset="./assets/poster4-BpOE2UXK.webp 1x" type="image/webp">
+              <source srcset="./assets/poster4-BJz41_Vv.jpg 1x" type="image/jpeg">
+              <img class="video__cover" src="./assets/poster4-BJz41_Vv.jpg" alt="Video 4 image" width="452" height="254" loading="lazy">
+            </picture>
+            <button class="video__youtube-button" type="button" aria-label="Play video 4" data-video="4">
+              <span class="visually-hidden">Play video 4</span>
+            </button>
+            <iframe 
+              id="player-4"
+              src="https://www.youtube.com/embed/2OR0OCr6uRE?si=E2-70tcVADlM3pdu&enablejsapi=1&controls=1&rel=0"
+              title="YouTube video player" 
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="data:image/webp;base64,UklGRpYDAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMIAAAABgBDZdt3mQngQxMRikjCQGSgMZAaCIAiGIAgPwoPwkrTV504BRMQEYDKmpuZuveWI9fIyH9Ya1sjlC2tYcJov1cfU5cvLmNy+sctI9633wOWbyx9P337+EnSfyY/qhAVAcEoBKkcGlMMQnTRmltRYWmdRYzH/d43FlKU3lpZYcmQ5YBwKZI4KCEcAUBgqAIjt0/AD574Hfi+7Cv6+93QMSt9xywhQ1hXMPnWNJcyHuqIIloaqY5YF64/curmbtnRgElZQOCCuAgAA0AwAnQEqKAAoAD5tKpBFpCKhlx3+ZEAGxLUAVhmOQIfbr3O5MZgN5rn1PLaC8Sfv1yzOBmmAmkePrUD6QBY/g3q9fvSGc888zPorZS1RqVP64a1KUWmtpSQkLuOmfLu5N63ZqJCU9I6XeR/Rt96QAP7TGI8Qtks+TsrNvU4WB9oyK9/w5X/xEbqmiHodU5W8f8uP7JDLCL7rvlQy8J4zzadafAp1e9Ofmivmyn9CoK2IcDEpTwLJbSFAY0sTTtgCbb/sJY5q5pglj0ioxTkNDyTH9GF36xX6t+y9TsJNJ3JJXpTjd53B8Ap0xdEgmcd9NrEjn7u19ottdrJOSXGtSr3GGQLA/WseyVbM65SjugYWk+/HWS5lc2Qx8eqWw4/L9LYtJbSpMS820mNlLPASXj59bNwi93NjrDgbrrNY8LhIEurA84GJnWa5hTAp6YTvdKjhnWpFJoajv/o4p3YSlerQdqObqsq2m1euFoFcEuVtrXUyutToa0Aiplwm4//WkCKEbs05zqWHQF2+vuTwqmeBxtR1sgfoBlvkGv/kWsBXN4VxvAx0r5eXIPvSIjDYr1kLMpiaCbOMNvrVJrgwuS0bM1ze5dh/XaD7aJ/0HgEGg2J2SSr+8tfTdpSgja3BugXgN9ToMSz6ihDCi69nknrKt/JWjxAh5gPBo9AtWOX77ZTVpWGIt5kHbPN3hCvjzW/dHGmNq2MauXU0hklsyircASU8AZj6BhntJ0b06hqNGN+Z8mz754veky2hUv0VBKr2+j/stYWXdBO1SIcNju0C/bAFjOj0633uCxQz/7FQdjbXUEW/dsgQg9UuO4QNUA+XhTnMDEsJZythOC6hGYLzmu6HerLA6iFsHnSygZC4BQoHh+CO8U47asDWcSxpLC/DZYreaG7SJbWp0AA= 1x" type="image/webp">
+                    <source srcset="./assets/lisa-BirsQk5d.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/lisa-BirsQk5d.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Exposition - Le Corps et l’Ame. De Dona...</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/poster3-B-b1C65K.webp 1x" type="image/webp">
+                <source srcset="./assets/poster3-Dpr2hsLX.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/poster3-Dpr2hsLX.jpg" alt="Video 5 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 5" data-video="5">
+                <span class="visually-hidden">Play video 5</span>
+              </button>
+              <iframe 
+                id="player-5"
+                src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=VaP-7wrEVqw3Xa5w&enablejsapi=1&controls=1&rel=0"
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="data:image/webp;base64,UklGRpYDAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMIAAAABgBDZdt3mQngQxMRikjCQGSgMZAaCIAiGIAgPwoPwkrTV504BRMQEYDKmpuZuveWI9fIyH9Ya1sjlC2tYcJov1cfU5cvLmNy+sctI9633wOWbyx9P337+EnSfyY/qhAVAcEoBKkcGlMMQnTRmltRYWmdRYzH/d43FlKU3lpZYcmQ5YBwKZI4KCEcAUBgqAIjt0/AD574Hfi+7Cv6+93QMSt9xywhQ1hXMPnWNJcyHuqIIloaqY5YF64/curmbtnRgElZQOCCuAgAA0AwAnQEqKAAoAD5tKpBFpCKhlx3+ZEAGxLUAVhmOQIfbr3O5MZgN5rn1PLaC8Sfv1yzOBmmAmkePrUD6QBY/g3q9fvSGc888zPorZS1RqVP64a1KUWmtpSQkLuOmfLu5N63ZqJCU9I6XeR/Rt96QAP7TGI8Qtks+TsrNvU4WB9oyK9/w5X/xEbqmiHodU5W8f8uP7JDLCL7rvlQy8J4zzadafAp1e9Ofmivmyn9CoK2IcDEpTwLJbSFAY0sTTtgCbb/sJY5q5pglj0ioxTkNDyTH9GF36xX6t+y9TsJNJ3JJXpTjd53B8Ap0xdEgmcd9NrEjn7u19ottdrJOSXGtSr3GGQLA/WseyVbM65SjugYWk+/HWS5lc2Qx8eqWw4/L9LYtJbSpMS820mNlLPASXj59bNwi93NjrDgbrrNY8LhIEurA84GJnWa5hTAp6YTvdKjhnWpFJoajv/o4p3YSlerQdqObqsq2m1euFoFcEuVtrXUyutToa0Aiplwm4//WkCKEbs05zqWHQF2+vuTwqmeBxtR1sgfoBlvkGv/kWsBXN4VxvAx0r5eXIPvSIjDYr1kLMpiaCbOMNvrVJrgwuS0bM1ze5dh/XaD7aJ/0HgEGg2J2SSr+8tfTdpSgja3BugXgN9ToMSz6ihDCi69nknrKt/JWjxAh5gPBo9AtWOX77ZTVpWGIt5kHbPN3hCvjzW/dHGmNq2MauXU0hklsyircASU8AZj6BhntJ0b06hqNGN+Z8mz754veky2hUv0VBKr2+j/stYWXdBO1SIcNju0C/bAFjOj0633uCxQz/7FQdjbXUEW/dsgQg9UuO4QNUA+XhTnMDEsJZythOC6hGYLzmu6HerLA6iFsHnSygZC4BQoHh+CO8U47asDWcSxpLC/DZYreaG7SJbWp0AA= 1x" type="image/webp">
+                    <source srcset="./assets/lisa-BirsQk5d.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/lisa-BirsQk5d.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Au Louvre ! La Venus de Milo</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/poster1-JU0eiPS_.webp 1x" type="image/webp">
+                <source srcset="./assets/poster1-Z9ahCa3G.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/poster1-Z9ahCa3G.jpg" alt="Video 6 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 6" data-video="6">
+                <span class="visually-hidden">Play video 6</span>
+              </button>
+              <iframe 
+                id="player-6"
+                src="https://www.youtube.com/embed/Vi5D6FKhRmo?si=ncHEYynY-zxpK3Ks&enablejsapi=1&controls=1&rel=0"
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="data:image/webp;base64,UklGRpYDAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMIAAAABgBDZdt3mQngQxMRikjCQGSgMZAaCIAiGIAgPwoPwkrTV504BRMQEYDKmpuZuveWI9fIyH9Ya1sjlC2tYcJov1cfU5cvLmNy+sctI9633wOWbyx9P337+EnSfyY/qhAVAcEoBKkcGlMMQnTRmltRYWmdRYzH/d43FlKU3lpZYcmQ5YBwKZI4KCEcAUBgqAIjt0/AD574Hfi+7Cv6+93QMSt9xywhQ1hXMPnWNJcyHuqIIloaqY5YF64/curmbtnRgElZQOCCuAgAA0AwAnQEqKAAoAD5tKpBFpCKhlx3+ZEAGxLUAVhmOQIfbr3O5MZgN5rn1PLaC8Sfv1yzOBmmAmkePrUD6QBY/g3q9fvSGc888zPorZS1RqVP64a1KUWmtpSQkLuOmfLu5N63ZqJCU9I6XeR/Rt96QAP7TGI8Qtks+TsrNvU4WB9oyK9/w5X/xEbqmiHodU5W8f8uP7JDLCL7rvlQy8J4zzadafAp1e9Ofmivmyn9CoK2IcDEpTwLJbSFAY0sTTtgCbb/sJY5q5pglj0ioxTkNDyTH9GF36xX6t+y9TsJNJ3JJXpTjd53B8Ap0xdEgmcd9NrEjn7u19ottdrJOSXGtSr3GGQLA/WseyVbM65SjugYWk+/HWS5lc2Qx8eqWw4/L9LYtJbSpMS820mNlLPASXj59bNwi93NjrDgbrrNY8LhIEurA84GJnWa5hTAp6YTvdKjhnWpFJoajv/o4p3YSlerQdqObqsq2m1euFoFcEuVtrXUyutToa0Aiplwm4//WkCKEbs05zqWHQF2+vuTwqmeBxtR1sgfoBlvkGv/kWsBXN4VxvAx0r5eXIPvSIjDYr1kLMpiaCbOMNvrVJrgwuS0bM1ze5dh/XaD7aJ/0HgEGg2J2SSr+8tfTdpSgja3BugXgN9ToMSz6ihDCi69nknrKt/JWjxAh5gPBo9AtWOX77ZTVpWGIt5kHbPN3hCvjzW/dHGmNq2MauXU0hklsyircASU8AZj6BhntJ0b06hqNGN+Z8mz754veky2hUv0VBKr2+j/stYWXdBO1SIcNju0C/bAFjOj0633uCxQz/7FQdjbXUEW/dsgQg9UuO4QNUA+XhTnMDEsJZythOC6hGYLzmu6HerLA6iFsHnSygZC4BQoHh+CO8U47asDWcSxpLC/DZYreaG7SJbWp0AA= 1x" type="image/webp">
+                    <source srcset="./assets/lisa-BirsQk5d.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/lisa-BirsQk5d.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Promenade dans les collections mesop...</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/poster2-CAomZ0tI.webp 1x" type="image/webp">
+                <source srcset="./assets/poster2-B80q9J6W.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/poster2-B80q9J6W.jpg" alt="Video 7 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 7" data-video="7">
+                <span class="visually-hidden">Play video 7</span>
+              </button>
+              <iframe 
+                id="player-7"
+                src="https://www.youtube.com/embed/NOhDysLnTvY?si=NlbYp_1vJNSvtYQr&enablejsapi=1&controls=1&rel=0"
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="video__carousel">
+            <button class="video__quotes swiper-button-prev video__arrow--prev" aria-label="Previous slide"></button>
+            <div class="video__dots swiper-pagination"></div>
+            <button class="video__quotes swiper-button-next video__arrow--next" aria-label="Next slide"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="gallery__title">Art Gallery</h2>
+        <div class="gallery__content">
+          <div class="gallery__column">
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery2-B-gEL6lV.webp" type="image/webp">
+                <img src="./assets/galery2-BdV-WUt6.jpg" width="456" height="570" alt="Art 2" loading="lazy" data-filename="galery2">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery9-DgVYwtzO.webp" type="image/webp">
+                <img src="./assets/galery9-BHU8dsmx.jpg" width="456" height="570" alt="Art 9" loading="lazy" data-filename="galery9">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery4-Ck9F0gVj.webp" type="image/webp">
+                <img src="./assets/galery4-Bwf7AIYM.jpg" width="456" height="456" alt="Art 4" loading="lazy" data-filename="galery4">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery6-CNmXIWZY.webp" type="image/webp">
+                <img src="./assets/galery6-HY84-mBQ.jpg" width="456" height="570" alt="Art 6" loading="lazy" data-filename="galery6">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery11-DcUtOtWE.webp" type="image/webp">
+                <img src="./assets/galery11-ClL-sNhe.jpg" width="456" height="456" alt="Art 11" loading="lazy" data-filename="galery11">
+              </picture>
+            </div>
+          </div>
+
+          <div class="gallery__column">
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery1-BjDdqOrM.webp" type="image/webp">
+                <img src="./assets/galery1-BsNTgrMf.jpg" width="456" height="570" alt="Art 1" loading="lazy" data-filename="galery1">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery8-NVqU3yxf.webp" type="image/webp">
+                <img src="./assets/galery8-DIzxXPVQ.jpg" width="456" height="570" alt="Art 8" loading="lazy" data-filename="galery8">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery3-C4jmwYr5.webp" type="image/webp">
+                <img src="./assets/galery3-Bqh0ysn_.jpg" width="456" height="456" alt="Art 3" loading="lazy" data-filename="galery3">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery5-CjhISPs_.webp" type="image/webp">
+                <img src="./assets/galery5-CU6JBb7t.jpg" width="456" height="570" alt="Art 5" loading="lazy" data-filename="galery5">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery13-C8GvfzWK.webp" type="image/webp">
+                <img src="./assets/galery13-cAaQMzuB.jpg" width="456" height="456" alt="Art 13" loading="lazy" data-filename="galery13">
+              </picture>
+            </div>
+          </div>
+
+          <div class="gallery__column">
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery7-Dz0o_sjO.webp" type="image/webp">
+                <img src="./assets/galery7-SaLm-wtg.jpg" width="456" height="570" alt="Art 7" loading="lazy" data-filename="galery7">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery10-CfJmF87f.webp" type="image/webp">
+                <img src="./assets/galery10-B7wfOzSq.jpg" width="456" height="570" alt="Art 10" loading="lazy" data-filename="galery10">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery15-0xJwswgb.webp" type="image/webp">
+                <img src="./assets/galery15-BjiSHXdT.jpg" width="456" height="456" alt="Art 15" loading="lazy" data-filename="galery15">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery12-CIckUfaH.webp" type="image/webp">
+                <img src="./assets/galery12-D2Kv_RxU.jpg" width="456" height="570" alt="Art 12" loading="lazy" data-filename="galery12">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/galery14-BWfoLWka.webp" type="image/webp">
+                <img src="./assets/galery14-OHn9aDHk.jpg" width="456" height="570" alt="Art 14" loading="lazy" data-filename="galery14">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tickets" id="tickets">
+      <div class="container">
+        <h2>BUY TICKETS</h2>
+        <div class="tickets__wrapper">
+          <div class="tickets__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)" srcset="./assets/img-PBAxvyKq.webp 1x" width="720" height="550">
+              <source type="image/jpeg" media="(min-width: 1920px)" srcset="./assets/img-h5_oH06Q.jpg 1x" width="720" height="550">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="./assets/img-PBAxvyKq.webp 1x" width="700" height="440">
+              <source type="image/jpeg" media="(min-width: 1024px)" srcset="./assets/img-h5_oH06Q.jpg 1x" width="700" height="440">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./assets/img-mobile-8QKyYdkc.webp 1x" width="444" height="340">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="./assets/img-mobile-Cg1qSM5i.jpg 1x" width="444" height="340">
+              <source type="image/webp" srcset="./assets/img-mobile-8QKyYdkc.webp 1x" width="380" height="160">
+              <img class="tickets__img" src="./assets/img-mobile-Cg1qSM5i.jpg" alt="Painting from a museum" width="380" height="160" loading="lazy">
+            </picture>
+          </div>
+          <form class="tickets__form form" method="post" action="https://echo.rs.school">
+            <div class="form__container">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                  <h3 class="form__title">Ticket Type</h3>
+                </legend>
+                <ul class="form__list selection-button">
+                  <li>
+                    <label class="selection-button__label selection-button__label--radio">
+                      <input class="selection-button__input" type="radio" name="exhibition" value="permanent" checked>
+                        <span class="selection-button__span"></span>
+                        <span class="selection-button__text">Permanent exhibition</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="selection-button__label selection-button__label--radio">
+                      <input class="selection-button__input" type="radio" name="exhibition" value="temporary">
+                        <span class="selection-button__span"></span>
+                        <span class="selection-button__text">Temporary exhibition</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="selection-button__label selection-button__label--radio">
+                      <input class="selection-button__input" type="radio" name="exhibition" value="combined">
+                      <span class="selection-button__span"></span>
+                      <span class="selection-button__text">Combined Admission</span>
+                    </label>
+                  </li>
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="form__fieldset form__fieldset--left">
+                <legend class="form__legend">
+                  <h3 class="form__title form__title--amount">Amount</h3>
+                </legend>
+                <fieldset class="form__fieldset amount">
+                  <legend class="amount__title">Basic 18+</legend>
+                  <div class="amount__panel">
+                    <button type="button" class="amount__btn amount__btn--less" aria-label="button one ticket less for adult">–</button>
+                    <input type="number" class="amount__input" name="basic" value="1" min="0" readonly>
+                    <button type="button" class="amount__btn amount__btn--more" aria-label="button one ticket more for adult">+</button>
+                  </div>
+                </fieldset>
+                <fieldset class="form__fieldset amount amount--two">
+                  <legend class="amount__title amount__title--two">Senior 65+</legend>
+                  <div class="amount__panel">
+                    <button type="button" class="amount__btn" aria-label="button one ticket more for senior">–</button>
+                    <input type="number" class="amount__input" name="senior" value="1" min="0" readonly>
+                    <button type="button" class="amount__btn" aria-label="button one ticket more for senior">+</button>
+                  </div>
+                </fieldset>
+                <div class="form__total">Total €220</div>
+                <button type="button" class="form__button" aria-label="button booking">Buy Now</button>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="tickets__parallax"></div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Contacts</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__text">
+            <h3>Palais Royal<br>Musee du Louvre</h3>
+            <div class="contacts__info">
+              <span class="contacts__phone">address:</span>
+              <address>75001 Paris, France</address>
+            </div>
+            <div class="contacts__info">
+              <span class="contacts__phone">phone:</span>
+              <a class="contacts__link" href="tel:+330140205050">+33(0) 1 40 20 50 50</a>
+            </div>
+            <div class="contacts__info">
+              <span class="contacts__mail">mail:</span>
+              <a class="contacts__link" href="mailto:info@louvre.fr">info@louvre.fr</a>
+            </div>
+          </div>
+          <div class="contacts__map map" id="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper footer__wrapper-links">
+        <a class="footer__link" href="#">
+          <svg class="footer__svg" width="50" height="34">
+            <use href="./assets/sprite-1D-C3cSj.svg#logo"></use>
+          </svg>
+          <span class="footer__text">
+            Louvre
+          </span>
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer__list footer-site">
+            <li>
+              <a class="footer-site__link" href="#visiting">Visiting</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#explore">Explore</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#video">Video</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#tickets">Tickets</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <ul class="footer__social social">
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">youtube link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/sprite-1D-C3cSj.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">instagram link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/sprite-1D-C3cSj.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">facebook link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/sprite-1D-C3cSj.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">twitter / X link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/sprite-1D-C3cSj.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">pinterest link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/sprite-1D-C3cSj.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__wrapper-copyright">
+        <span class="footer__copyright">© 2021</span>
+        <span class="footer__title">The Rolling Scopes School</span>
+        <span class="footer__nickname">pixelslogic</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museum Popup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <button class="popup__close">✕</button>
+
+      <div class="popup__left">
+        <div class="popup__logo">
+          <svg class="popup__logo-icon" width="85" height="41">
+            <use href="./assets/sprite-1D-C3cSj.svg#popup-logo"></use>
+          </svg>
+          <h1 class="popup__title">BOOKING TICKETS</h1>
+          <h2 class="popup__subtitle">Tour to Louvre</h2>
+        </div>
+
+        <form class="popup__form">
+          <div class="popup__row">
+            <label class="popup__label" for="popup-date">
+              <svg class="popup__input-icon" width="16" height="16">
+                <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-date"></use>
+              </svg>
+              <input class="popup__input" type="date" id="popup-date" name="ticket-date" required>
+              <svg class="popup__input-select" width="16" height="16">
+                <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-arrow"></use>
+              </svg>
+            </label>
+            <label class="popup__label" for="popup-time">
+              <svg class="popup__input-icon" width="16" height="16">
+                <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-time"></use>
+              </svg>
+              <select class="popup__input" name="ticket-time" id="popup-time" required>
+                <option value="" disabled selected>Time</option>
+                <option value="11:00">11:00</option>
+                <option value="11:40">11:40</option>
+                <option value="12:30">12:30</option>
+              </select>
+              <svg class="popup__input-select" width="16" height="16">
+                <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-arrow"></use>
+              </svg>
+            </label>
+          </div>
+
+          <label class="popup__label" for="popup-name">
+            <svg class="popup__input-icon" width="16" height="16">
+              <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-user"></use>
+            </svg>
+            <input type="text" class="popup__input" placeholder="Name" id="popup-name" name="name" required>
+          </label>
+
+          <label class="popup__label" for="popup-email">
+            <svg class="popup__input-icon" width="16" height="16">
+              <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-email"></use>
+            </svg>
+            <input type="email" class="popup__input" placeholder="E-mail" id="popup-email" name="email" required>
+          </label>
+
+          <label class="popup__label" for="popup-phone">
+            <svg class="popup__input-icon" width="16" height="16">
+              <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-tel"></use>
+            </svg>
+            <input type="tel" class="popup__input" placeholder="Phone" id="popup-phone" name="phone" required>
+          </label>
+
+          <label class="popup__label" for="popup-ticket-type">
+            <svg class="popup__input-icon" width="16" height="16">
+              <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-ballot"></use>
+            </svg>
+            <select class="popup__input" name="ticket-type" id="popup-ticket-type" required>
+              <option value="" disabled selected>Ticket Type</option>
+              <option value="permanent">Permanent exhibition</option>
+              <option value="temporary">Temporary exhibition</option>
+              <option value="combined">Combined Admission</option>
+            </select>
+            <svg class="popup__input-select" width="16" height="16">
+              <use xlink:href="./assets/sprite-1D-C3cSj.svg#popup-arrow"></use>
+            </svg>
+          </label>
+
+          <div class="popup__entry-selection">
+            <p class="popup__entry-label">Entry Ticket</p>
+            <div class="popup__entry-item" data-type="basic">
+              <span class="popup__entry-text">Basic 18+ (20 €)</span>
+              <div class="popup__counter">
+                <button type="button" class="popup__counter-btn">-</button>
+                <span class="popup__counter-value">2</span>
+                <button type="button" class="popup__counter-btn">+</button>
+              </div>
+            </div>
+            <div class="popup__entry-item" data-type="senior">
+              <span class="popup__entry-text">Senior 65+ (10 €)</span>
+              <div class="popup__counter">
+                <button type="button" class="popup__counter-btn">-</button>
+                <span class="popup__counter-value">2</span>
+                <button type="button" class="popup__counter-btn">+</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup__right">
+        <div class="popup__overview">
+          <h3 class="popup__overview-title">Overview</h3>
+          <p class="popup__tour-name">Tour to Louvre</p>
+          <ul class="popup__overview-list">
+            <li class="popup__overview-item">
+              <svg class="social__svg" width="15" height="15">
+                <use href="./assets/sprite-1D-C3cSj.svg#popup-date"></use>
+              </svg>
+              <span>Friday, August 19</span>
+            </li>
+            <li class="popup__overview-item">
+              <svg class="social__svg" width="15" height="15">
+                <use href="./assets/sprite-1D-C3cSj.svg#popup-time"></use>
+              </svg>
+              <span>16 : 30</span>
+            </li>
+            <li class="popup__overview-item">
+              <svg class="social__svg" width="15" height="15">
+                <use href="./assets/sprite-1D-C3cSj.svg#popup-check"></use>
+              </svg>
+              <span>Temporary exhibition</span>
+            </li>
+          </ul>
+          <div class="popup__overview-tickets">
+            <div class="popup__ticket-item">
+              <p><strong>2</strong>Basic (20 €)</p>
+              <span>40 €</span>
+            </div>
+            <div class="popup__ticket-item">
+              <p><strong>2</strong>Senior (10 €)</p>
+              <span>20 €</span>
+            </div>
+          </div>
+          <p class="popup__total">Total: <strong>60 €</strong></p>
+        </div>
+
+        <div class="popup__card-form">
+          <div class="popup__card-front">
+            <div class="popup__card-header">
+              <div class="popup__card-left">
+                <div class="popup__card-number">
+                  <label class="popup__card-label" for="popup-card-number">Card Number</label>
+                  <input type="text"
+                        class="popup__card-input popup__card-input--number"
+                        id="popup-card-number"
+                        name="card-number"
+                        maxlength="16"
+                        required>
+                </div>
+                
+                <div class="popup__exp-container">
+                  <label class="popup__card-label" for="popup-card-month">Expiration date</label>
+                  <div class="popup__exp-inputs">
+                    <input type="text"
+                          class="popup__card-input popup__card-input--month"
+                          id="popup-card-month"
+                          name="card-month"
+                          placeholder="MM"
+                          maxlength="2"
+                          required>
+                    <input type="text"
+                          class="popup__card-input popup__card-input--year"
+                          id="popup-card-year"
+                          name="card-year"
+                          placeholder="YY"
+                          maxlength="2"
+                          required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popup__card-right">
+                <div class="popup__card-logo">
+                  <img class="popup__card-logo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAQCAYAAACycufIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQkSURBVHgBlVbNchtFEP56Vwr+O2yuHEA5cYzewJsbkX1QLlRxQn4Cy1UQEyhY+xCMTapkP4HFiSPyIdhAFV6FFzDc4KQ8AGVRldiOY82kZ1arndkZKZWusrU70zvdX/98PXTxZH6dJJpSUg2uDKXE9uLmRQ8+aexugeSytfby8gHS7SFWvj+11mW4j1++OLLWPt6pIQhaIPAZVIeUkV4nGgLijB+6eLr5o9f2ym4bkr+j8TfZh5Z+ZeHzywP+PXixV60TqusEtKxDCIf83wWnHAMSSDIRdDWw1Z0YgmJLX8ot672xt8+L69ne5F+uyw7z91KvueAaOy1W72S6lv2BqR/kD0sPX58tPrxYezUSd/jIboEN0YvH1bpjIEDsrAm5Pd6MnL3Ll3/BB2ym0Jl/PUim6DctrfL27T+TeDH95rkY0RqDHGqlamX5rQakTHHyaJA9o6w/1BlVsrrbdICpbwVXjFTZ0n9t6GqRA8esyhpQg18iNJ58mL9UnO1bcz1cX58vPfu2d/jRT/c+ef/f00D1gym67EoGBPdUIfWS80UGXODA8Zf3Sit9/juATyhcH5drvsBBM/qORjHGpelkDr2NITuQcj021/759PDZfx884KNi2EA+s94lBvjVJItSMMzyktIt2fu7nXEPzxYVVCnrll3iPrd8KwIbeA8JKSMQQv3+362ECN3zJMqc0k7IlqUvsTV5bnYiB4AIUuNwl5wIbWbN07eClOVWYLuks2yeNek7P7hKtWAoonj+jyTC3FXmcFgp9QtH78Sg65srl3zE9fPJsxoHhH24UitAftd2dhVoaVXQEFcXR6jcSp1z4iSaDi4vzVzY6O1+UsvACIuRrKxpCe865/3+tc16Tzc3IMSaDowrDDLsOACDsMSQsqdJSvmK0jnvLem+9oNTQmYpqXdKPEylhq1dFkLGtg/w0/nJoy6ON+9MBUkMZpwBbytMxo42klp7gYjVj8uWk49v+lwihjEmCQoim6k4ejn9F3o1W0cMMEsUyGanh1fXP3OFxMZOhPlFVQX9LGvmmRzUkA75FjR2g21akpFOMMNoCjvdkcVU2m8zevm5ssyU6eQxz0RZVGnlJGbKzev/vVnTvkxmYozy3FOJYFvTM6eVeJBKtP2bTMHlrDUeu2SCoCjLhYVzjjaPmYCBjLIby4iZlUK+V8IlKtWrKz90uM/xjsIEOFefDW4kjrg0/eB8WQsqNZT9yK9d2eBHFm3Vl+Oiya+GVikr26ONjCEdAlMzOIUj6uplVA3R3dngVGmu7A2duWVetWzD069dYuqVqXzGgD1r4bev+t6rlmQCOvbYXmU/hTliZDwbnNYZHfDwtJ2WnqwVzqXFiyhKUqiIqzujbCKbaTXjG3XT4Psl96eaXXlAQMvOeb6gKrnhMjcZngK8ASygvX9aL5HEAAAAAElFTkSuQmCC" alt="Visa card logo" width="55" height="16">
+                  <img class="popup__card-logo-img" src="data:image/png;base64,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" alt="MasterCard logo" width="53" height="32">
+                </div>
+              </div>
+            </div>
+
+            <div class="popup__cardholder-container">
+              <label class="popup__card-label" for="popup-card-holder">Cardholder name</label>
+              <input type="text"
+                    class="popup__card-input popup__card-input--holder"
+                    id="popup-card-holder"
+                    name="card-holder"
+                    required>
+            </div>
+          </div>
+
+          <div class="popup__card-back">
+            <div class="popup__card-stripe"></div>
+            <div class="popup__cvc-container">
+              <label class="popup__card-label" for="popup-card-cvc">CVC/CVV</label>
+              <input type="text"
+                class="popup__card-input popup__card-input--cvc"
+                id="popup-card-cvc"
+                name="card-cvc"
+                minlength="3"
+                maxlength="4"
+                required>
+              <small class="popup__cvc-note">The last 3&nbsp;or 4 digits on back of the card</small>
+            </div>
+          </div>
+          <button type="submit" class="popup__card-btn">Book</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
