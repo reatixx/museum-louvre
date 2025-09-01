@@ -1,0 +1,18 @@
+@use "../global/mixin" as m;
+@use "../global/variables" as v;
+
+.site-list .social-menu {
+  display: flex;
+
+  @include m.tablet {
+    margin-top: 5px;
+  }
+
+  @include m.adaptive(laptop, desktop) {
+    display: none;
+  }
+
+  @include m.desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,64 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+
+.selection-button__label {
+  @include m.flex-row;
+  column-gap: 10px;
+  font-family: v.$roboto;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.selection-button {
+  @include m.flex-column;
+  gap: 29px;
+  align-items: flex-start;
+  padding: 3px 0 0 5px;
+}
+
+
+.selection-button__input {
+  display: none;
+}
+
+.selection-button__input:checked + .selection-button__span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 7px;
+  height: 7px;
+  background-color: v.$black;
+  border-radius: 50%;
+}
+
+.selection-button__text {
+  line-height: 1;
+  display: inline-block;
+}
+
+.selection-button__span {
+  width: 17px;
+  height: 17px;
+  border: 2px solid v.$black;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  flex-shrink: 0;
+  border: 2px solid v.$black;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.selection-button {
+  @include m.flex-column;
+  gap: 29px;
+  align-items: flex-start;
+  padding: 3px 0 0 5px;
+
+  @include m.desktop {
+    padding: 6px 0 0 5px;
+  }
+}

@@ -1,0 +1,96 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+
+.amount {
+  padding: 10px 0 0;
+
+  @include m.tablet {
+    padding: 8px 0 0;
+  }
+
+  &--two {
+    padding: 0;
+  }
+}
+
+.amount__title {
+  @include m.amount-text;
+  column-gap: 3px;
+  margin-bottom: 4px;
+
+  @include m.mobile {
+    text-align: left;
+  }
+
+  @include m.tablet {
+    margin: 0;
+  }
+
+  @include m.laptop {
+    margin: 0;
+  }
+
+  &--two {
+    transform: translate(0, -4px);
+    margin-bottom: 10px;
+
+    @include m.tablet {
+      padding-bottom: 5px;
+      transform: none;
+      padding-bottom: 0;
+    }
+
+    @include m.laptop {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.amount__panel {
+  display: flex;
+  align-items: center;
+  border: 3px solid v.$black;
+  max-width: 150px;
+  max-height: 50px;
+  justify-content: space-between;
+
+  @include m.adaptive(mobile, desktop) {
+    max-width: 175px;
+  }
+}
+
+.amount__btn {
+  border: none;
+  background: none;
+  font-size: 32px;
+  outline: none;
+  font-family: v.$roboto;
+  cursor: pointer;
+  padding: 8px;
+  color: v.$black;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amount__input {
+  width: 33px;
+  height: 40px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: v.$roboto;
+  text-align: center;
+  line-height: 40px;
+  padding: 0;
+  box-sizing: content-box;
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

@@ -1,0 +1,224 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+
+.explore {
+  background-color: v.$bg-black;
+
+  @include m.mobile {
+    padding: 40px 0;
+  }
+
+  @include m.tablet {
+    padding: 40px 0;
+  }
+
+  @include m.laptop {
+    padding: 60px 0;
+  }
+
+  @include m.desktop {
+    padding: 75px 0;
+  }
+}
+
+.explore__sections {
+  @include m.flex-column;
+    align-items: normal;
+
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 43px;
+    margin: 0;
+  }
+}
+
+.explore__slider {
+  position: relative;
+  grid-area: 1 / 2 / 3 / 2;
+  min-height: 700px;
+
+  @include m.mobile {
+    margin-top: 40px;
+    min-height: 368px;
+  }
+
+  @include m.tablet {
+    margin-top: 40px;
+    min-height: 705px;
+  }
+
+  @include m.laptop {
+    margin-top: 60px;
+    min-height: 700px;
+  }
+
+  @include m.desktop {
+    margin-top: 15px;
+    min-height: 700px;
+  }
+}
+
+.explore__picture-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  &--before {
+    z-index: 10;
+    clip-path: polygon(0 0, 61% 0, 61% 100%, 0 100%);
+
+    @include m.laptop {
+      clip-path: polygon(0 0, 58% 0, 58% 100%, 0 100%);
+    }
+  }
+
+  &--after {
+    z-index: 11;
+    clip-path: polygon(61% 0, 100% 0, 100% 100%, 61% 100%);
+
+    @include m.laptop {
+      clip-path: polygon(58% 0, 100% 0, 100% 100%, 58% 100%);
+    }
+  }
+}
+
+.explore__button {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('/assets/img/icon/button-slider.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: col-resize;
+  z-index: 20;
+  background-color: transparent;
+
+  @include m.mobile {
+    width: 20px;
+    height: 368px;
+    left: calc(68% - 28px);
+    background-image: url('/assets/img/icon/button-slider-mobile.svg');
+  }
+
+  @include m.tablet {
+    width: 39px;
+    height: 705px;
+    left: calc(64% - 25px);
+    background-image: url('/assets/img/icon/button-slider-tablet.svg');
+  }
+
+  @include m.laptop {
+    left: calc(64% - 25px);
+  }
+
+  @include m.laptop {
+    width: 39px;
+    height: 700px;
+    left: calc(60% - 18px);
+  }
+
+  @include m.desktop {
+    width: 39px;
+    height: 700px;
+    left: calc(65% - 28px);
+  }
+}
+
+.explore__picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.explore__text {
+  & h2 {
+    @include m.title;
+    color: v.$white;
+    margin: 0;
+    position: relative;
+
+    @include m.mobile {
+      padding-bottom: 23px;
+    }
+
+    @include m.tablet {
+      padding-bottom: 23px;
+    }
+
+    @include m.laptop {
+      padding-bottom: 23px;
+    }
+
+    @include m.desktop {
+      padding-bottom: 28px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      background-color: v.$red;
+
+      @include m.mobile {
+        width: 100%;
+      }
+
+      @include m.tablet {
+        width: 100%;
+      }
+
+      @include m.laptop {
+        width: 100%;
+      }
+
+      @include m.desktop {
+        width: 660px;
+      }
+    }
+  }
+}
+
+.explore__description {
+  @include m.flex-column;
+  gap: 25px;
+  margin: 77px 0 0;
+  max-width: 660px;
+
+  @include m.mobile {
+    display: none;
+  }
+
+  @include m.tablet {
+    display: none;
+  }
+
+  @include m.laptop {
+    margin: 60px 0 0;
+  }
+
+  @include m.laptop {
+    max-width: fit-content;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  & p {
+    @include m.text-p;
+    margin: 0;
+
+    @include m.laptop {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}

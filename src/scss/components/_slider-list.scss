@@ -1,0 +1,18 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+@use "../global/viewports" as s;
+
+.slider-list {
+  @include m.list;
+}
+
+.slider-list__item {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}

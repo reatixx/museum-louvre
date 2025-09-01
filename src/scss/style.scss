@@ -1,0 +1,32 @@
+//global
+@use "./global/fonts" as *;
+@use "./global/variables" as *;
+@use "./global/viewports" as *;
+@use "./global/visually-hidden" as *;
+@use "./global/button";
+@use "./global/basic" as *;
+@use "./global/mixin" as *;
+@use "./global/container";
+//components
+@use "./components/header";
+@use "./components/nav";
+@use "./components/site-list";
+@use "./components/img-menu";
+@use "./components/social-menu";
+@use "./components/welcome";
+@use "./components/hero-slider";
+@use "./components/visiting";
+@use "./components/explore";
+@use "./components/video";
+@use "./components/gallery";
+@use "./components/tickets";
+@use "./components/form";
+@use "./components/amount";
+@use "./components/selection-button";
+@use "./components/contacts";
+@use "./components/footer";
+@use "./components/footer-site";
+@use "./components/social";
+@use "./components/slider-list";
+@use "./components/map";
+@use "./components/popup";

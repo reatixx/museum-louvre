@@ -1,0 +1,56 @@
+@use "../global/mixin" as m;
+@use "../global/variables" as v;
+@use "../global/viewports" as s;
+
+.social {
+  @include m.list;
+  margin: 0 auto;
+
+  @include m.adaptive(0, tablet) {
+    column-gap: 5px;
+  }
+
+  @include m.tablet {
+    gap: 20px;
+  }
+
+  @include m.laptop {
+    gap: 25px;
+  }
+
+  @include m.desktop {
+    column-gap: 21px;
+    align-self: flex-end;
+    margin-bottom: 3px;
+  }
+}
+
+.social__link {
+  display: flex;
+  border: 2px solid v.$border-link;
+  border-radius: 50%;
+  padding: 12px;
+  align-items: center;
+
+  @include m.mobile {
+    padding: 10px;
+  }
+
+  @include m.laptop {
+    width: 48px;
+    height: 48px;
+  }
+
+  &:hover {
+    border-color: v.$gold;
+
+    & .social__svg {
+      color: v.$gold;
+    }
+  }
+}
+
+.social__svg {
+  color: v.$white;
+  transition: color 0.3s ease;
+}

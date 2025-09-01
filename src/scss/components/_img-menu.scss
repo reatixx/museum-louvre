@@ -1,0 +1,59 @@
+@use "../global/mixin" as m;
+@use "../global/variables" as v;
+
+.site-list--open .img-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.img-menu {
+  @include m.adaptive(0, tablet) {
+  @include m.list;
+  @include m.flex-row;  
+    gap: 13px;
+    padding: 11px 0;
+    background-color: v.$bg-black;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+  }
+
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin-top: 10px;
+    padding-bottom: 34px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+  }
+
+  @include m.adaptive(laptop, desktop) {
+    display: none;
+  }
+
+  @include m.desktop {
+    display: none;
+  }
+}
+
+.img-menu__item {
+  &--one {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  &--two {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  &--three {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+}

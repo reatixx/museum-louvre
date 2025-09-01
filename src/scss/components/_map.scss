@@ -1,0 +1,27 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+
+#map {
+  position: relative;
+  width: 380px;
+  height: 248px;
+
+  @include m.tablet {
+    width: 728px;
+    height: 476px;
+  }
+
+  @include m.laptop {
+    width: 694px;
+    height: 454px;
+  }
+
+  @include m.desktop {
+    width: 960px;
+    height: 620px;
+  }
+}
+
+.mapboxgl-control-container {
+  display: none;
+}

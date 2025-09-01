@@ -1,0 +1,126 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+
+.gallery {
+  min-width: 420px;
+  position: relative;
+  margin: 0 auto;
+  background-color: v.$black;
+  color: v.$white;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 75px;
+
+  @include m.mobile {
+    padding-top: 41px;
+  }
+
+  @include m.tablet {
+    padding-top: 40px;
+  }
+
+  @include m.laptop {
+    padding-top: 60px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.8));
+    pointer-events: none;
+    z-index: 3;
+  }
+}
+
+.gallery__content {
+  display: grid;
+  grid-auto-rows: auto;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+
+  @include m.adaptive(mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 637px;
+    gap: 24px;
+  }
+
+  @include m.adaptive(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 1080px;
+    gap: 24px;
+  }
+
+  @include m.adaptive(laptop) {
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 1265px;
+    gap: 36px;
+  }
+
+  @include m.adaptive(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 1960px;
+    gap: 36px;
+  }
+}
+
+.gallery__item {
+  display: flex;
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: opacity 0.8s cubic-bezier(.19,1,.22,1), transform 0.8s cubic-bezier(.19,1,.22,1);
+  will-change: opacity, transform;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.gallery__column {
+  @include m.flex-column;
+  gap: 24px;
+
+  position: relative;
+  overflow: hidden;
+
+  &:nth-child(3n-2) {
+    margin-top: 50px;
+  }
+
+  &:nth-child(3n) {
+    margin-top: 50px;
+  }
+}
+
+.gallery__title {
+  @include m.title;
+  color: v.$white;
+  margin: 0;
+  margin-bottom: 75px;
+
+  @include m.mobile {
+    margin-bottom: 39px;
+  }
+
+  @include m.tablet {
+    margin-bottom: 40px;
+  }
+
+  @include m.laptop {
+    margin-bottom: 60px;
+  }
+}

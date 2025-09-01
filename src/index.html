@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum</title>
+  <meta name="description" content="Explore the Louvre Museum online. Discover world-famous artworks, virtual tours, history, and cultural treasures of Paris's iconic museum.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <link rel="preload" href="./fonts/Forum/Forum-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Roboto/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav nav">
+        <div class="nav__logo-wrapper">
+          <a class="nav__link" href="#">
+            <svg class="nav__svg" width="50" height="34">
+              <use href="./assets/img/icon/sprite.svg#logo"></use>
+            </svg>
+            <span class="nav__text">
+              Louvre
+            </span>
+          </a>
+
+          <ul class="nav__list site-list site-list--close">
+            <li>
+              <a class="site-list__link" href="#visiting">
+                Visiting
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#explore">
+                Explore
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#video">
+                Video
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#gallery">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#tickets">
+                Tickets
+              </a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#contacts">
+                Contacts
+              </a>
+            </li>
+
+            <li>
+              <ul class="nav__img-menu img-menu img-menu--close">
+                <li class="img-menu__item img-menu__item--one">
+                  <a class="img-menu__link">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./assets/img/nav/nav-1-tablet.webp 1x" width="319" height="161">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="./assets/img/nav/nav-1-tablet.jpg 1x" width="319" height="161">
+                      <source type="image/webp" media="(min-width: 420px)" srcset="./assets/img/nav/nav-1.webp 1x" width="95" height="95">
+                      <source type="image/jpeg" media="(min-width: 420px)" srcset="./assets/img/nav/nav-1.jpg 1x" width="95" height="95">
+                      <img class="img-menu__img" src="./assets/img/nav/nav-1.jpg" alt="first img from navigation" loading="lazy">
+                    </picture>
+                  </a>
+                </li>
+                <li class="img-menu__item img-menu__item--two">
+                  <a class="img-menu__link">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./assets/img/nav/nav-2-tablet.webp 1x" width="658" height="194">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="./assets/img/nav/nav-2-tablet.jpg 1x" width="658" height="194">
+                      <source type="image/webp" media="(min-width: 420px)" srcset="./assets/img/nav/nav-2.webp 1x" width="95" height="95">
+                      <source type="image/jpeg" media="(min-width: 420px)" srcset="./assets/img/nav/nav-2.jpg 1x" width="95" height="95">
+                      <img class="img-menu__img" src="./assets/img/nav/nav-2.jpg" alt="second img from navigation" loading="lazy">
+                    </picture>
+                  </a>
+                </li>
+                <li class="img-menu__item img-menu__item--three">
+                  <a class="img-menu__link">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="./assets/img/nav/nav-3-tablet.webp 1x" width="319" height="161">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="./assets/img/nav/nav-3-tablet.jpg 1x" width="319" height="161">
+                      <source type="image/webp" media="(min-width: 420px)" srcset="./assets/img/nav/nav-3.webp 1x" width="95" height="95">
+                      <source type="image/jpeg" media="(min-width: 420px)" srcset="./assets/img/nav/nav-3.jpg 1x" width="95" height="95">
+                      <img class="img-menu__img" src="./assets/img/nav/nav-3.jpg" alt="third img from navigation" loading="lazy">
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul class="nav__social-menu social social-menu social-menu--close">
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">youtube link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/img/icon/sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">instagram link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/img/icon/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">facebook link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/img/icon/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">twitter / X link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/img/icon/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">pinterest link</span>
+                    <svg class="social__svg" width="24" height="24">
+                      <use href="./assets/img/icon/sprite.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="site-list__burger site-list__burger--open" type="button" aria-label="burger menu">
+            <svg class="site-list__svg site-list__open" width="32" height="18">
+              <use href="./assets/img/icon/sprite.svg#burger"></use>
+            </svg>
+
+            <svg class="site-list__svg site-list__close" width="24" height="24">
+              <use href="./assets/img/icon/sprite.svg#burger-close"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+    <section class="welcome">
+      <h1 class="visually-hidden">Louvre</h1>
+      <div class="welcome__wrapper">
+        <div class="welcome__text">
+          <h2 class="welcome__title">
+            Welcome<br>to the Louvre
+          </h2>
+          <p class="welcome__description">
+            From the castle to the museum
+          </p>
+          <a class="welcome__button button" href="#">
+            Discover the Louvre
+          </a>
+        </div>
+        <div class="welcome__slider-container">
+          <div class="welcome__slider-wrapper swiper welcome-swiper">
+            <ul class="welcome__slider-list slider-list swiper-wrapper welcome-swiper__list">
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/1.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/1.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/img/welcome-slider/1.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/2.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/2.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/img/welcome-slider/2.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/3.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/3.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/img/welcome-slider/3.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/4.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/4.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/img/welcome-slider/4.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider-list__item swiper-slide welcome-swiper__item">
+                <div class="welcome__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/5.webp 1x" width="380" height="285">
+                    <source type="image/webp" srcset="./assets/img/welcome-slider/5.jpg 1x" width="380" height="285">
+                    <img class="welcome__image" src="./assets/img/welcome-slider/5.jpg" width="380" height="285" alt="Picture of Mona Lisa" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      <div class="welcome__slider hero-slider">
+        <span class="hero-slider__text" id="hero-slider-text">01&nbsp;|&nbsp;05</span>
+        <div class="hero-slider__dots swiper-pagination hero-slider__pagination"></div>
+        <div class="hero-slider__arrows">
+          <span class="hero-slider__arrow swiper-button-prev hero-slider__arrow--left">
+            <svg class="hero-slider__svg">
+              <use href="./assets/img/icon/sprite.svg#arrow"></use>
+            </svg>
+          </span>
+          <span class="hero-slider__arrow hero-slider__arrow--right swiper-button-next">
+            <svg class="hero-slider__svg">
+              <use href="./assets/img/icon/sprite.svg#arrow"></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>
+    </div>
+  </header>
+  <main>
+    <section class="visiting" id="visiting">
+      <div class="container">
+        <div class="visiting__wrapper">
+          <h2>Virtual tour</h2>
+          <div class="visiting__tours">
+            <ul class="visiting__list">
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/tours/tour1@1x.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/img/tours/tour1@1x.jpg 1x">
+                    <img src="./assets/img/tours/tour1@1x.jpg 1x" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Royal Palace</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/tours/tour2@1x.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/img/tours/tour2@1x.jpg 1x">
+                    <img src="./assets/img/tours/tour2@1x.jpg 1x" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Denon Wing</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/tours/tour3@1x.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/img/tours/tour3@1x.jpg 1x">
+                    <img src="./assets/img/tours/tour3@1x.jpg" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Colonnade Perrault</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/tours/tour4@1x.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/img/tours/tour4@1x.jpg 1x">
+                    <img src="./assets/img/tours/tour4@1x.jpg" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Greek hall</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/tours/tour5@1x.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/img/tours/tour5@1x.jpg 1x">
+                    <img src="./assets/img/tours/tour5@1x.jpg" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Mona Lisa</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+              <li class="visiting__item">
+                <div class="visiting__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/tours/tour6@1x.webp 1x">
+                    <source type="image/jpeg" srcset="./assets/img/tours/tour6@1x.jpg 1x">
+                    <img src="./assets/img/tours/tour6@1x.jpg" width="440" height="285" alt="Picture of Royal Palace" loading="lazy">
+                  </picture>
+                </div>
+                <div class="visiting__text">
+                  <h3>Night Palace</h3>
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="explore">
+      <div class="container">
+        <div class="explore__sections">
+          <div class="explore__text">
+            <h2>Picture explore</h2>
+            <div class="explore__description">
+              <p>
+                Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
+              </p>
+              <p>
+                It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.
+              </p>
+              <p>
+                The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.
+              </p>
+            </div>
+          </div>
+          <div class="explore__slider" data-container>
+            <div class="explore__picture-container explore__picture-container--before" data-image1>
+              <div class="explore__img">
+                <picture>
+                  <source type="image/webp" srcset="./assets/img/explore-slider/before.webp 1x">
+                  <source type="image/jpeg" srcset="./assets/img/explore-slider/before.jpg 1x">
+                  <img class="explore__picture" src="./assets/img/explore-slider/before.jpg" alt="first slider image" loading="lazy">
+                </picture>
+              </div>
+            </div>
+            <div class="explore__picture-container explore__picture-container--after" data-image2>
+              <div class="explore__img">
+                <picture>
+                  <source type="image/webp" srcset="./assets/img/explore-slider/after.webp 1x">
+                  <source type="image/jpeg" srcset="./assets/img/explore-slider/after.jpg 1x">
+                  <img class="explore__picture" src="./assets/img/explore-slider/after.jpg" alt="second slider image" loading="lazy">
+                </picture>
+              </div>
+            </div>
+            <button class="explore__button" type="button" data-button aria-label="button slider"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" id="video">
+      <div class="container">
+        <div class="video__text-wrapper">
+          <h2>VIDEO JOURNEY</h2>
+          <p>
+            Enter and visit one of the most famous museums in the world and enjoy<br>
+            masterpieces such as Mona Lisa or Hammurabi’s Code
+          </p>
+        </div>
+        <div class="video__main-wrapper">
+          <div class="video__main">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)" srcset="./assets/video/poster0-desktop.webp 1x" width="1440" height="650">
+              <source type="image/jpeg" media="(min-width: 1920px)" srcset="./assets/video/poster0-desktop.jpg 1x" width="1440" height="650">
+              <img class="video__cover" src="./assets/video/poster0-mobile.jpg" alt="Main video image" width="380" height="172" loading="lazy">
+            </picture>
+            <button class="video__play-button" type="button" aria-label="Play main video">
+              <span class="visually-hidden">play main video</span>
+            </button>
+            <iframe
+              id="player-main"
+              src="https://www.youtube.com/embed/aWmJ5DgyWPI?enablejsapi=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0&showinfo=0&autohide=1"
+              title="YouTube video player"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video__main-panel">
+            <button class="video__control-button video__control-button--play" type="button" aria-label="Play or pause video">
+              <span class="visually-hidden">play video in panel</span>
+              <svg class="video__control-icon">
+                <use href="./assets/img/icon/sprite.svg#play-panel"></use>
+              </svg>
+            </button>
+            <input type="range" class="video__bar video__seek-bar" min="0" max="100" value="54" aria-label="Seek video">
+            <button class="video__control-button video__control-button--volume" type="button" aria-label="Toggle mute">
+              <span class="visually-hidden">sound icon in panel</span>
+              <svg class="video__control-icon video__control-icon--sound">
+                <use href="./assets/img/icon/sprite.svg#sound"></use>
+              </svg>
+            </button>
+            <input type="range" class="video__bar video__volume-bar" min="0" max="100" value="43" aria-label="Adjust volume">
+            <button class="video__control-button video__control-button--fullscreen" type="button" aria-label="Toggle fullscreen">
+              <svg class="video__control-icon video__control-icon--fullscreen">
+                <use href="./assets/img/icon/sprite.svg#fullscreen"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="video__slider">
+          <div class="video__iframes">
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="./assets/video/lisa.webp 1x" type="image/webp">
+                    <source srcset="./assets/video/lisa.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/video/lisa.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Exposition - Le Corps et l’Ame. De Dona...</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/video/poster3.webp 1x" type="image/webp">
+                <source srcset="./assets/video/poster3.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/video/poster3.jpg" alt="Video 1 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 1" data-video="1">
+                <span class="visually-hidden">Play video 1</span>
+              </button>
+              <iframe 
+                id="player-1"
+                src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=VaP-7wrEVqw3Xa5w&enablejsapi=1&controls=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&showinfo=0&autohide=1" 
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="./assets/video/lisa.webp 1x" type="image/webp">
+                    <source srcset="./assets/video/lisa.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/video/lisa.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Au Louvre ! La Venus de Milo</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/video/poster1.webp 1x" type="image/webp">
+                <source srcset="./assets/video/poster1.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/video/poster1.jpg" alt="Video 2 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 2" data-video="2">
+                <span class="visually-hidden">Play video 2</span>
+              </button>
+              <iframe 
+                id="player-2"
+                src="https://www.youtube.com/embed/Vi5D6FKhRmo?si=ncHEYynY-zxpK3Ks&enablejsapi=1&controls=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&showinfo=0&autohide=1" 
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="./assets/video/lisa.webp 1x" type="image/webp">
+                    <source srcset="./assets/video/lisa.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/video/lisa.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Promenade dans les collections mesop...</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/video/poster2.webp 1x" type="image/webp">
+                <source srcset="./assets/video/poster2.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/video/poster2.jpg" alt="Video 3 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 3" data-video="3">
+                <span class="visually-hidden">Play video 3</span>
+              </button>
+              <iframe 
+                id="player-3"
+                src="https://www.youtube.com/embed/NOhDysLnTvY?si=NlbYp_1vJNSvtYQr&enablejsapi=1&controls=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&showinfo=0&autohide=1" 
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                loading="lazy"
+              ></iframe>
+            </div>
+
+          <div class="video__thumbnail">
+            <div class="video__panel-top">
+              <a class="video__panel-wrapper" href="#">
+                <picture>
+                  <source srcset="./assets/video/lisa.webp 1x" type="image/webp">
+                  <source srcset="./assets/video/lisa.png 1x" type="image/jpeg">
+                  <img class="video__panel-img" src="./assets/video/lisa.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                </picture>
+                <span class="video__panel-span">Petits contes de Printemps - La ruse du Renard</span>
+              </a>
+              <span class="video__panel-dots"></span>
+            </div>
+            <picture>
+              <source srcset="./assets/video/poster4.webp 1x" type="image/webp">
+              <source srcset="./assets/video/poster4.jpg 1x" type="image/jpeg">
+              <img class="video__cover" src="./assets/video/poster4.jpg" alt="Video 4 image" width="452" height="254" loading="lazy">
+            </picture>
+            <button class="video__youtube-button" type="button" aria-label="Play video 4" data-video="4">
+              <span class="visually-hidden">Play video 4</span>
+            </button>
+            <iframe 
+              id="player-4"
+              src="https://www.youtube.com/embed/2OR0OCr6uRE?si=E2-70tcVADlM3pdu&enablejsapi=1&controls=1&rel=0"
+              title="YouTube video player" 
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="./assets/video/lisa.webp 1x" type="image/webp">
+                    <source srcset="./assets/video/lisa.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/video/lisa.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Exposition - Le Corps et l’Ame. De Dona...</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/video/poster3.webp 1x" type="image/webp">
+                <source srcset="./assets/video/poster3.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/video/poster3.jpg" alt="Video 5 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 5" data-video="5">
+                <span class="visually-hidden">Play video 5</span>
+              </button>
+              <iframe 
+                id="player-5"
+                src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=VaP-7wrEVqw3Xa5w&enablejsapi=1&controls=1&rel=0"
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="./assets/video/lisa.webp 1x" type="image/webp">
+                    <source srcset="./assets/video/lisa.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/video/lisa.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Au Louvre ! La Venus de Milo</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/video/poster1.webp 1x" type="image/webp">
+                <source srcset="./assets/video/poster1.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/video/poster1.jpg" alt="Video 6 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 6" data-video="6">
+                <span class="visually-hidden">Play video 6</span>
+              </button>
+              <iframe 
+                id="player-6"
+                src="https://www.youtube.com/embed/Vi5D6FKhRmo?si=ncHEYynY-zxpK3Ks&enablejsapi=1&controls=1&rel=0"
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video__thumbnail">
+              <div class="video__panel-top">
+                <a class="video__panel-wrapper" href="#">
+                  <picture>
+                    <source srcset="./assets/video/lisa.webp 1x" type="image/webp">
+                    <source srcset="./assets/video/lisa.png 1x" type="image/jpeg">
+                    <img class="video__panel-img" src="./assets/video/lisa.png" alt="Louvre YouTube channel cover" width="1440" height="650" loading="lazy">
+                  </picture>
+                  <span class="video__panel-span">Promenade dans les collections mesop...</span>
+                </a>
+                <span class="video__panel-dots"></span>
+              </div>
+              <picture>
+                <source srcset="./assets/video/poster2.webp 1x" type="image/webp">
+                <source srcset="./assets/video/poster2.jpg 1x" type="image/jpeg">
+                <img class="video__cover" src="./assets/video/poster2.jpg" alt="Video 7 image" width="452" height="254" loading="lazy">
+              </picture>
+              <button class="video__youtube-button" type="button" aria-label="Play video 7" data-video="7">
+                <span class="visually-hidden">Play video 7</span>
+              </button>
+              <iframe 
+                id="player-7"
+                src="https://www.youtube.com/embed/NOhDysLnTvY?si=NlbYp_1vJNSvtYQr&enablejsapi=1&controls=1&rel=0"
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="video__carousel">
+            <button class="video__quotes swiper-button-prev video__arrow--prev" aria-label="Previous slide"></button>
+            <div class="video__dots swiper-pagination"></div>
+            <button class="video__quotes swiper-button-next video__arrow--next" aria-label="Next slide"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="gallery__title">Art Gallery</h2>
+        <div class="gallery__content">
+          <div class="gallery__column">
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery2.webp" type="image/webp">
+                <img src="./assets/img/galery/galery2.jpg" width="456" height="570" alt="Art 2" loading="lazy" data-filename="galery2">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery9.webp" type="image/webp">
+                <img src="./assets/img/galery/galery9.jpg" width="456" height="570" alt="Art 9" loading="lazy" data-filename="galery9">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery4.webp" type="image/webp">
+                <img src="./assets/img/galery/galery4.jpg" width="456" height="456" alt="Art 4" loading="lazy" data-filename="galery4">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery6.webp" type="image/webp">
+                <img src="./assets/img/galery/galery6.jpg" width="456" height="570" alt="Art 6" loading="lazy" data-filename="galery6">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery11.webp" type="image/webp">
+                <img src="./assets/img/galery/galery11.jpg" width="456" height="456" alt="Art 11" loading="lazy" data-filename="galery11">
+              </picture>
+            </div>
+          </div>
+
+          <div class="gallery__column">
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery1.webp" type="image/webp">
+                <img src="./assets/img/galery/galery1.jpg" width="456" height="570" alt="Art 1" loading="lazy" data-filename="galery1">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery8.webp" type="image/webp">
+                <img src="./assets/img/galery/galery8.jpg" width="456" height="570" alt="Art 8" loading="lazy" data-filename="galery8">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery3.webp" type="image/webp">
+                <img src="./assets/img/galery/galery3.jpg" width="456" height="456" alt="Art 3" loading="lazy" data-filename="galery3">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery5.webp" type="image/webp">
+                <img src="./assets/img/galery/galery5.jpg" width="456" height="570" alt="Art 5" loading="lazy" data-filename="galery5">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery13.webp" type="image/webp">
+                <img src="./assets/img/galery/galery13.jpg" width="456" height="456" alt="Art 13" loading="lazy" data-filename="galery13">
+              </picture>
+            </div>
+          </div>
+
+          <div class="gallery__column">
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery7.webp" type="image/webp">
+                <img src="./assets/img/galery/galery7.jpg" width="456" height="570" alt="Art 7" loading="lazy" data-filename="galery7">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery10.webp" type="image/webp">
+                <img src="./assets/img/galery/galery10.jpg" width="456" height="570" alt="Art 10" loading="lazy" data-filename="galery10">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery15.webp" type="image/webp">
+                <img src="./assets/img/galery/galery15.jpg" width="456" height="456" alt="Art 15" loading="lazy" data-filename="galery15">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery12.webp" type="image/webp">
+                <img src="./assets/img/galery/galery12.jpg" width="456" height="570" alt="Art 12" loading="lazy" data-filename="galery12">
+              </picture>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source srcset="./assets/img/galery/galery14.webp" type="image/webp">
+                <img src="./assets/img/galery/galery14.jpg" width="456" height="570" alt="Art 14" loading="lazy" data-filename="galery14">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tickets" id="tickets">
+      <div class="container">
+        <h2>BUY TICKETS</h2>
+        <div class="tickets__wrapper">
+          <div class="tickets__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)" srcset="./assets/img/tickets/img.webp 1x" width="720" height="550">
+              <source type="image/jpeg" media="(min-width: 1920px)" srcset="./assets/img/tickets/img.jpg 1x" width="720" height="550">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="./assets/img/tickets/img.webp 1x" width="700" height="440">
+              <source type="image/jpeg" media="(min-width: 1024px)" srcset="./assets/img/tickets/img.jpg 1x" width="700" height="440">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./assets/img/tickets/img-mobile.webp 1x" width="444" height="340">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="./assets/img/tickets/img-mobile.jpg 1x" width="444" height="340">
+              <source type="image/webp" srcset="./assets/img/tickets/img-mobile.webp 1x" width="380" height="160">
+              <img class="tickets__img" src="./assets/img/tickets/img-mobile.jpg" alt="Painting from a museum" width="380" height="160" loading="lazy">
+            </picture>
+          </div>
+          <form class="tickets__form form" method="post" action="https://echo.rs.school">
+            <div class="form__container">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                  <h3 class="form__title">Ticket Type</h3>
+                </legend>
+                <ul class="form__list selection-button">
+                  <li>
+                    <label class="selection-button__label selection-button__label--radio">
+                      <input class="selection-button__input" type="radio" name="exhibition" value="permanent" checked>
+                        <span class="selection-button__span"></span>
+                        <span class="selection-button__text">Permanent exhibition</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="selection-button__label selection-button__label--radio">
+                      <input class="selection-button__input" type="radio" name="exhibition" value="temporary">
+                        <span class="selection-button__span"></span>
+                        <span class="selection-button__text">Temporary exhibition</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="selection-button__label selection-button__label--radio">
+                      <input class="selection-button__input" type="radio" name="exhibition" value="combined">
+                      <span class="selection-button__span"></span>
+                      <span class="selection-button__text">Combined Admission</span>
+                    </label>
+                  </li>
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="form__fieldset form__fieldset--left">
+                <legend class="form__legend">
+                  <h3 class="form__title form__title--amount">Amount</h3>
+                </legend>
+                <fieldset class="form__fieldset amount">
+                  <legend class="amount__title">Basic 18+</legend>
+                  <div class="amount__panel">
+                    <button type="button" class="amount__btn amount__btn--less" aria-label="button one ticket less for adult">–</button>
+                    <input type="number" class="amount__input" name="basic" value="1" min="0" readonly>
+                    <button type="button" class="amount__btn amount__btn--more" aria-label="button one ticket more for adult">+</button>
+                  </div>
+                </fieldset>
+                <fieldset class="form__fieldset amount amount--two">
+                  <legend class="amount__title amount__title--two">Senior 65+</legend>
+                  <div class="amount__panel">
+                    <button type="button" class="amount__btn" aria-label="button one ticket more for senior">–</button>
+                    <input type="number" class="amount__input" name="senior" value="1" min="0" readonly>
+                    <button type="button" class="amount__btn" aria-label="button one ticket more for senior">+</button>
+                  </div>
+                </fieldset>
+                <div class="form__total">Total €220</div>
+                <button type="button" class="form__button" aria-label="button booking">Buy Now</button>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="tickets__parallax"></div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Contacts</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__text">
+            <h3>Palais Royal<br>Musee du Louvre</h3>
+            <div class="contacts__info">
+              <span class="contacts__phone">address:</span>
+              <address>75001 Paris, France</address>
+            </div>
+            <div class="contacts__info">
+              <span class="contacts__phone">phone:</span>
+              <a class="contacts__link" href="tel:+330140205050">+33(0) 1 40 20 50 50</a>
+            </div>
+            <div class="contacts__info">
+              <span class="contacts__mail">mail:</span>
+              <a class="contacts__link" href="mailto:info@louvre.fr">info@louvre.fr</a>
+            </div>
+          </div>
+          <div class="contacts__map map" id="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper footer__wrapper-links">
+        <a class="footer__link" href="#">
+          <svg class="footer__svg" width="50" height="34">
+            <use href="./assets/img/icon/sprite.svg#logo"></use>
+          </svg>
+          <span class="footer__text">
+            Louvre
+          </span>
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer__list footer-site">
+            <li>
+              <a class="footer-site__link" href="#visiting">Visiting</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#explore">Explore</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#video">Video</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#tickets">Tickets</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <ul class="footer__social social">
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">youtube link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/img/icon/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">instagram link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/img/icon/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">facebook link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/img/icon/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">twitter / X link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/img/icon/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">pinterest link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/img/icon/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__wrapper-copyright">
+        <span class="footer__copyright">© 2021</span>
+        <span class="footer__title">The Rolling Scopes School</span>
+        <span class="footer__nickname">pixelslogic</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museum Popup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <button class="popup__close">✕</button>
+
+      <div class="popup__left">
+        <div class="popup__logo">
+          <svg class="popup__logo-icon" width="85" height="41">
+            <use href="./assets/img/icon/sprite.svg#popup-logo"></use>
+          </svg>
+          <h1 class="popup__title">BOOKING TICKETS</h1>
+          <h2 class="popup__subtitle">Tour to Louvre</h2>
+        </div>
+
+        <form class="popup__form">
+          <div class="popup__row">
+            <label class="popup__label" for="popup-date">
+              <svg class="popup__input-icon" width="16" height="16">
+                <use xlink:href="./assets/img/icon/sprite.svg#popup-date"></use>
+              </svg>
+              <input class="popup__input" type="date" id="popup-date" name="ticket-date" required>
+              <svg class="popup__input-select" width="16" height="16">
+                <use xlink:href="./assets/img/icon/sprite.svg#popup-arrow"></use>
+              </svg>
+            </label>
+            <label class="popup__label" for="popup-time">
+              <svg class="popup__input-icon" width="16" height="16">
+                <use xlink:href="./assets/img/icon/sprite.svg#popup-time"></use>
+              </svg>
+              <select class="popup__input" name="ticket-time" id="popup-time" required>
+                <option value="" disabled selected>Time</option>
+                <option value="11:00">11:00</option>
+                <option value="11:40">11:40</option>
+                <option value="12:30">12:30</option>
+              </select>
+              <svg class="popup__input-select" width="16" height="16">
+                <use xlink:href="./assets/img/icon/sprite.svg#popup-arrow"></use>
+              </svg>
+            </label>
+          </div>
+
+          <label class="popup__label" for="popup-name">
+            <svg class="popup__input-icon" width="16" height="16">
+              <use xlink:href="./assets/img/icon/sprite.svg#popup-user"></use>
+            </svg>
+            <input type="text" class="popup__input" placeholder="Name" id="popup-name" name="name" required>
+          </label>
+
+          <label class="popup__label" for="popup-email">
+            <svg class="popup__input-icon" width="16" height="16">
+              <use xlink:href="./assets/img/icon/sprite.svg#popup-email"></use>
+            </svg>
+            <input type="email" class="popup__input" placeholder="E-mail" id="popup-email" name="email" required>
+          </label>
+
+          <label class="popup__label" for="popup-phone">
+            <svg class="popup__input-icon" width="16" height="16">
+              <use xlink:href="./assets/img/icon/sprite.svg#popup-tel"></use>
+            </svg>
+            <input type="tel" class="popup__input" placeholder="Phone" id="popup-phone" name="phone" required>
+          </label>
+
+          <label class="popup__label" for="popup-ticket-type">
+            <svg class="popup__input-icon" width="16" height="16">
+              <use xlink:href="./assets/img/icon/sprite.svg#popup-ballot"></use>
+            </svg>
+            <select class="popup__input" name="ticket-type" id="popup-ticket-type" required>
+              <option value="" disabled selected>Ticket Type</option>
+              <option value="permanent">Permanent exhibition</option>
+              <option value="temporary">Temporary exhibition</option>
+              <option value="combined">Combined Admission</option>
+            </select>
+            <svg class="popup__input-select" width="16" height="16">
+              <use xlink:href="./assets/img/icon/sprite.svg#popup-arrow"></use>
+            </svg>
+          </label>
+
+          <div class="popup__entry-selection">
+            <p class="popup__entry-label">Entry Ticket</p>
+            <div class="popup__entry-item" data-type="basic">
+              <span class="popup__entry-text">Basic 18+ (20 €)</span>
+              <div class="popup__counter">
+                <button type="button" class="popup__counter-btn">-</button>
+                <span class="popup__counter-value">2</span>
+                <button type="button" class="popup__counter-btn">+</button>
+              </div>
+            </div>
+            <div class="popup__entry-item" data-type="senior">
+              <span class="popup__entry-text">Senior 65+ (10 €)</span>
+              <div class="popup__counter">
+                <button type="button" class="popup__counter-btn">-</button>
+                <span class="popup__counter-value">2</span>
+                <button type="button" class="popup__counter-btn">+</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup__right">
+        <div class="popup__overview">
+          <h3 class="popup__overview-title">Overview</h3>
+          <p class="popup__tour-name">Tour to Louvre</p>
+          <ul class="popup__overview-list">
+            <li class="popup__overview-item">
+              <svg class="social__svg" width="15" height="15">
+                <use href="./assets/img/icon/sprite.svg#popup-date"></use>
+              </svg>
+              <span>Friday, August 19</span>
+            </li>
+            <li class="popup__overview-item">
+              <svg class="social__svg" width="15" height="15">
+                <use href="./assets/img/icon/sprite.svg#popup-time"></use>
+              </svg>
+              <span>16 : 30</span>
+            </li>
+            <li class="popup__overview-item">
+              <svg class="social__svg" width="15" height="15">
+                <use href="./assets/img/icon/sprite.svg#popup-check"></use>
+              </svg>
+              <span>Temporary exhibition</span>
+            </li>
+          </ul>
+          <div class="popup__overview-tickets">
+            <div class="popup__ticket-item">
+              <p><strong>2</strong>Basic (20 €)</p>
+              <span>40 €</span>
+            </div>
+            <div class="popup__ticket-item">
+              <p><strong>2</strong>Senior (10 €)</p>
+              <span>20 €</span>
+            </div>
+          </div>
+          <p class="popup__total">Total: <strong>60 €</strong></p>
+        </div>
+
+        <div class="popup__card-form">
+          <div class="popup__card-front">
+            <div class="popup__card-header">
+              <div class="popup__card-left">
+                <div class="popup__card-number">
+                  <label class="popup__card-label" for="popup-card-number">Card Number</label>
+                  <input type="text"
+                        class="popup__card-input popup__card-input--number"
+                        id="popup-card-number"
+                        name="card-number"
+                        maxlength="16"
+                        required>
+                </div>
+                
+                <div class="popup__exp-container">
+                  <label class="popup__card-label" for="popup-card-month">Expiration date</label>
+                  <div class="popup__exp-inputs">
+                    <input type="text"
+                          class="popup__card-input popup__card-input--month"
+                          id="popup-card-month"
+                          name="card-month"
+                          placeholder="MM"
+                          maxlength="2"
+                          required>
+                    <input type="text"
+                          class="popup__card-input popup__card-input--year"
+                          id="popup-card-year"
+                          name="card-year"
+                          placeholder="YY"
+                          maxlength="2"
+                          required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popup__card-right">
+                <div class="popup__card-logo">
+                  <img class="popup__card-logo-img" src="./assets/img/tickets/visa.png" alt="Visa card logo" width="55" height="16">
+                  <img class="popup__card-logo-img" src="./assets/img/tickets/mastercard.png" alt="MasterCard logo" width="53" height="32">
+                </div>
+              </div>
+            </div>
+
+            <div class="popup__cardholder-container">
+              <label class="popup__card-label" for="popup-card-holder">Cardholder name</label>
+              <input type="text"
+                    class="popup__card-input popup__card-input--holder"
+                    id="popup-card-holder"
+                    name="card-holder"
+                    required>
+            </div>
+          </div>
+
+          <div class="popup__card-back">
+            <div class="popup__card-stripe"></div>
+            <div class="popup__cvc-container">
+              <label class="popup__card-label" for="popup-card-cvc">CVC/CVV</label>
+              <input type="text"
+                class="popup__card-input popup__card-input--cvc"
+                id="popup-card-cvc"
+                name="card-cvc"
+                minlength="3"
+                maxlength="4"
+                required>
+              <small class="popup__cvc-note">The last 3&nbsp;or 4 digits on back of the card</small>
+            </div>
+          </div>
+          <button type="submit" class="popup__card-btn">Book</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

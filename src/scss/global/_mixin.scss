@@ -1,0 +1,599 @@
+@use "../global/variables" as v;
+@use "../global/viewports" as s;
+@use "sass:map";
+
+
+@mixin adaptive($start: 0, $end: 0) {
+  @if $start == 0 and $end != 0 {
+    $max-width: map-get(s.$sizes, $end) - 1px;
+    @media (max-width: #{$max-width}) {
+      @content;
+    }
+  } @else if $start != 0 and $end != 0 {
+    $min-width: map-get(s.$sizes, $start);
+    $max-width: map-get(s.$sizes, $end) - 1px;
+    @media (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+      @content;
+    }
+  } @else if $start != 0 and $end == 0 {
+    $min-width: map-get(s.$sizes, $start);
+    @media (min-width: #{$min-width}) {
+      @content;
+    }
+  }
+}
+
+@mixin mobile {
+  @include adaptive(mobile, tablet) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include adaptive(tablet, laptop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @include adaptive(laptop, desktop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include adaptive(desktop) {
+    @content;
+  }
+}
+
+@mixin container($padding-mobile: 0 20px, $padding-desktop: 0 240px) {
+  width: 100%;
+  margin: 0 auto;
+  padding: $padding-mobile;
+
+  @include adaptive(mobile, tablet) {
+    max-width: map.get(s.$sizes, mobile);
+    padding: $padding-mobile;
+  }
+
+  @include adaptive(tablet, laptop) {
+    max-width: map.get(s.$sizes, tablet);
+    padding: $padding-mobile;
+  }
+
+  @include adaptive(laptop, desktop) {
+    max-width: map.get(s.$sizes, laptop);
+    padding: $padding-mobile;
+  }
+
+  @include desktop {
+    max-width: map.get(s.$sizes, desktop);
+    padding: $padding-desktop;
+  }
+}
+
+@mixin list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin nav-link {
+  text-decoration: none;
+  color: v.$white;
+  font-family: v.$roboto;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  font-weight: 250;
+  align-items: center;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 3px;
+  }
+
+  @include laptop {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@mixin nav-logo {
+  @include flex-row;
+  gap: 25px;
+  line-height: 26px;
+  font-size: 16px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: v.$white;
+  text-decoration: none;
+  font-family: v.$forum;
+
+  @include adaptive(tablet, desktop) {
+    font-size: 28px;
+    line-height: 31px;
+  }
+
+  @include desktop {
+    font-size: 28px;
+    line-height: 31px;
+  }
+}
+
+@mixin title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: v.$forum;
+  letter-spacing: 5px;
+  color: v.$gold;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  @include laptop {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  @include desktop {
+    font-size: 80px;
+    line-height: 90px;
+  }
+}
+
+@mixin first-span {
+  color: v.$black;
+  font-family: v.$roboto;
+  font-weight: 250;
+  font-size: 16px;
+  line-height: 19px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @include laptop {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@mixin second-span {
+  color: v.$black;
+  font-family: v.$roboto;
+  font-weight: 250;
+  font-size: 16px;
+  line-height: 19px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @include laptop {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@mixin tours-title {
+  color: v.$black;
+  font-family: v.$forum;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 5px;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+
+  @include laptop {
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 3px;
+  }
+
+  @include desktop {
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+  }
+}
+
+@mixin text-p {
+  font-family: v.$roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: v.$white;
+
+  @include laptop {
+    font-size: 20px;
+    line-height: 37px;
+  }
+}
+
+@mixin text-h3 {
+  font-family: v.$roboto;
+  font-weight: 500;
+  color: v.$black;
+  line-height: 19px;
+  font-size: 16px;
+
+  @include tablet {
+    line-height: 20px;
+    font-size: 23px;
+  }
+
+  @include laptop {
+    line-height: 28px;
+    font-size: 24px;
+  }
+
+  @include desktop {
+    line-height: 33px;
+    font-size: 28px;
+  }
+}
+
+@mixin text-contacts {
+  font-family: v.$roboto;
+  font-weight: 300;
+  color: v.$black;
+  line-height: 19px;
+  font-size: 16px;
+
+  @include tablet {
+    line-height: 21px;
+    font-size: 18px;
+  }
+
+  @include laptop {
+    line-height: 23px;
+    font-size: 20px;
+  }
+
+  @include desktop {
+    line-height: 26px;
+    font-size: 22px;
+  }
+}
+
+@mixin footer-copy {
+  font-family: v.$roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: v.$white;
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include adaptive(tablet, desktop) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+@mixin video-text {
+  color: v.$white;
+  font-size: 18px;
+  font-family: v.$roboto;
+  font-weight: 400;
+  line-height: 38px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 99px;
+
+  @include tablet {
+    max-width: 183px;
+  }
+
+  @include laptop {
+    max-width: 188px;
+  }
+
+  @include desktop {
+    max-width: 329px;
+  }
+}
+
+@mixin welcome-title {
+  color: v.$white;
+  font-family: v.$forum;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+
+  @include tablet {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 0 25px;
+  }
+
+  @include laptop {
+    font-size: 50px;
+    line-height: 90px;
+    margin: 50px 0 0px;
+    text-align: start;
+  }
+
+  @include desktop {
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    margin: 150px 0 0;
+    text-align: start;
+  }
+
+  @content;
+}
+
+@mixin welcome-text {
+  color: v.$white;
+  font-family: v.$roboto;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 25px 0 50px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin: 0 0 48px;
+  }
+
+  @include laptop {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: start;
+  }
+
+  @include desktop {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: start;
+  }
+
+  @content;
+}
+
+@mixin responsive-iframe($aspect-ratio: 16 / 9, $max-height: 650px) {
+  position: relative;
+  width: 100%;
+  padding-top: calc(100% / (#{$aspect-ratio}));
+  max-height: $max-height;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: $max-height;
+    border: none;
+  }
+}
+
+@mixin logo {
+    width: 29px;
+    height: 31px;
+
+  @include adaptive (tablet, desktop) {
+    width: 49px;
+    height: 26px;
+  }
+
+  @include desktop {
+    width: 49px;
+    height: 26px;
+  }
+}
+
+@mixin amount {
+  color: v.$black;
+  text-align: center;
+  font-family: v.$roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @include laptop {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @include desktop {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@mixin amount-text {
+  color: v.$black;
+  font-family: v.$roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  @include adaptive (tablet, desktop) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@mixin form-total {
+  color: v.$black;
+  font-family: v.$roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0;
+
+  @include adaptive (tablet, desktop) {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+  }
+
+  @include desktop {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+  }
+}
+
+@mixin tickets-button {
+  background-color: v.$black;
+  color: v.$white;
+  border: 0;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-family: v.$roboto;
+  padding: 12px 38px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+
+  @include mobile {
+    margin-top: 16px;
+    padding: 12px 49px;
+  }
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include laptop {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    margin-top: 26px;
+  }
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 26px;;
+    letter-spacing: 2px;
+  }
+
+  &:hover {
+    background-color: v.$gold;
+    color: v.$black;
+  }
+}
+
+@mixin tickets-h3 {
+  font-family: v.$roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: v.$black;
+
+  @include tablet {
+    line-height: 23px;
+    font-size: 20px;
+  }
+
+  @include laptop {
+    line-height: 28px;
+    font-size: 24px;
+  }
+
+  @include desktop {
+    line-height: 33px;
+    font-size: 28px;
+  }
+}
+
+@mixin footer-text {
+  color: v.$white;
+  font-family: v.$roboto;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 2px;
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include laptop {
+    font-size: 22px;
+  }
+
+  @include desktop {
+    font-size: 22px;
+  }
+}

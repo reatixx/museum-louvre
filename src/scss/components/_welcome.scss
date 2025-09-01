@@ -1,0 +1,158 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+@use "../global/viewports" as s;
+
+.welcome {
+  position: relative;
+
+  &__wrapper {
+    @include m.mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include m.tablet {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include m.laptop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+
+    @include m.desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  }
+
+  &__title {
+    @include m.welcome-title;
+  }
+
+  &__description {
+    @include m.welcome-text;
+
+    @include m.desktop {
+      margin: 25px 0 0;
+    }
+  }
+
+  &__text {
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+    justify-self: start;
+    z-index: 2;
+    width: 100%;
+  }
+
+
+  &__image {
+    @include m.desktop {
+      max-width: 1000px;
+      max-height: 750px;
+    }
+
+    @include m.laptop {
+      max-width: 700px;
+      max-height: 525px;
+    }
+  }
+
+  &__picture {
+  position: relative;
+  height: 100%;
+  display: flex;
+
+    @include m.laptop {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        black 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+
+    @include m.desktop {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        black 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+}
+
+.welcome__slider-container {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 1;
+  justify-self: end;
+  align-self: stretch;
+  max-width: 100%;
+  position: relative;
+
+  @include m.tablet {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
+
+  @include m.laptop {
+    grid-column: 1 / -1;
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+
+  @include m.desktop {
+    grid-column: 1 / -1;
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+}
+
+.welcome__slider-wrapper {
+  width: 100%;
+
+  @include m.laptop {
+    width: 700px !important;
+    height: 525px;
+  }
+
+  @include m.desktop {
+    width: 1000px !important;
+    height: 700px;
+  }
+}

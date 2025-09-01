@@ -1,0 +1,186 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+
+.footer {
+  background-color: v.$bg-black;
+  padding-top: 85px;
+  padding-bottom: 52px;
+  position: relative;
+  min-width: 420px;
+
+  @include m.mobile {
+    padding-top: 33px;
+    padding-bottom: 42px;
+  }
+
+  @include m.tablet {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+
+  @include m.laptop {
+    padding-top: 62px;
+    padding-bottom: 47px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: calc(32% - 1px);
+    width: 100%;
+    height: 3px;
+    background-color: v.$border-link;
+
+    @include m.mobile {
+      bottom: calc(27% - 6px);
+    }
+
+    @include m.tablet {
+      bottom: calc(25% - 1px);
+    }
+
+    @include m.laptop {
+      bottom: calc(34% - 3px);
+    }
+  }
+}
+
+.footer__text {
+  @include m.nav-logo;
+  text-transform: uppercase;
+}
+
+.footer__wrapper {
+  @include m.flex-row;
+  align-items: flex-start;
+
+  @include m.mobile {
+    gap: 33px;
+  }
+
+  @include m.tablet {
+    gap: 98px;
+  }
+
+  @include m.laptop {
+    gap: 40px;
+  }
+
+  @include m.desktop {
+    justify-content: space-between;
+  }
+}
+
+.footer__social {
+  @include m.flex-row;
+}
+
+.footer__link {
+  @include m.flex-row;
+  align-items: flex-start;
+  gap: 20px;
+  text-decoration: none;
+  align-items: end;
+
+  @include m.tablet {
+    gap: 25px;
+    align-items: baseline;
+  }
+
+  @include m.laptop {
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  @include m.desktop {
+    gap: 26px;
+    align-items: flex-start;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.footer__wrapper-copyright {
+  @include m.flex-row;
+  @include m.footer-copy;
+  padding-top: 22px;
+  justify-content: space-between;
+
+  @include m.mobile {
+    padding-top: 51px;
+  }
+}
+
+.footer__wrapper-links {
+  padding-bottom: 82px;
+
+  @include m.mobile {
+    padding-bottom: 30px;
+  }
+
+  @include m.tablet {
+    padding-bottom: 54px;
+  }
+}
+
+.footer__title {
+  margin-left: 37px;
+  cursor: default;
+
+  &:hover,
+  &:focus {
+    color: v.$gold;
+  }
+
+  @include m.mobile {
+    display: none;
+  }
+}
+
+.footer__copyright {
+  cursor: default;
+
+  &:hover,
+  &:focus {
+    color: v.$gold;
+  }
+}
+
+.footer__nickname {
+  cursor: default;
+
+  &:hover,
+  &:focus {
+    color: v.$gold;
+  }
+}
+
+.footer__nav {
+  @include m.flex-column;
+
+  @include m.mobile {
+    gap: 40px;
+  }
+
+  @include m.tablet {
+    gap: 49px;
+  }
+
+  @include m.laptop {
+    flex-direction: row;
+    gap: 96px;
+  }
+
+  @include m.desktop {
+    @include m.flex-row;
+    gap: 397px;
+  }
+}
+
+.footer__svg {
+  @include m.logo;
+}

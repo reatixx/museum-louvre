@@ -1,0 +1,201 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+
+.hero-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: v.$black;
+  color: v.$white;
+  font-family: v.$roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  z-index: 16;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 200px;
+
+  @include m.mobile {
+    padding: 20px 0;
+    width: 230px;
+  }
+
+  @include m.tablet {
+    padding: 30px 0;
+    width: 401px;
+  }
+
+  @include m.laptop {
+    padding: 20px 0;
+    width: 700px;
+    position: absolute;
+    left: calc(31% - 17px);
+    bottom: calc(-8% - 18px);
+    width: 700px;
+    height: 120px;
+    padding: 40px 74px;
+    justify-content: end;
+    gap: 45px;
+  }
+
+  @include m.desktop {
+    position: absolute;
+    left: calc(60% - 24px);
+    bottom: -8%;
+    width: 600px;
+    height: 120px;
+    padding: 40px 74px;
+  }
+}
+
+.hero-slider__dots {
+  display: flex;
+  gap: 5px;
+
+  @include m.mobile {
+    gap: 10px;
+  }
+
+  @include m.tablet {
+    gap: 25px;
+  }
+
+  @include m.laptop {
+    gap: 25px;
+  }
+
+  @include m.desktop {
+    gap: 25px;
+  }
+}
+
+.hero-slider__dot {
+  background-color: v.$white;
+  cursor: pointer;
+  width: 7px;
+  height: 7px;
+  user-select: none;
+  appearance: none;
+  outline: none;
+  overflow: hidden;
+  display: inline-block;
+
+  @include m.mobile {
+    width: 7px;
+    height: 7px;
+  }
+
+  @include m.tablet {
+    width: 12px;
+    height: 12px;
+  }
+
+  @include m.laptop {
+    width: 12px;
+    height: 12px;
+  }
+
+  @include m.desktop {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--active {
+    background-color: v.$gold;
+  }
+}
+
+.hero-slider__arrows {
+  display: flex;
+
+  @include m.mobile {
+    gap: 10px;
+  }
+
+  @include m.tablet {
+    gap: 14px;
+  }
+
+  @include m.laptop {
+    gap: 20px;
+  }
+
+  @include m.desktop {
+    gap: 20px;
+  }
+}
+
+.hero-slider__arrow {
+  @include m.flex-row;
+  cursor: pointer;
+  gap: 20px;
+
+  &--left {
+    margin-right: 5px;
+  }
+
+  &--right {
+    margin-left: 5px;
+    transform: scaleX(-1);
+  }
+}
+
+.hero-slider__svg {
+  width: 20px;
+  height: 8px;
+
+  @include m.mobile {
+    width: 20px;
+    height: 8px;
+  }
+
+  @include m.tablet {
+    width: 30px;
+    height: 8px;
+  }
+
+  @include m.laptop {
+    width: 30px;
+    height: 8px;
+  }
+
+  @include m.desktop {
+    width: 30px;
+    height: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    color: v.$gold;
+  }
+}
+
+.hero-slider__text {
+  color: v.$white;
+  font-weight: 400;
+  font-family: v.$roboto;
+  text-transform: uppercase;
+
+  @include m.mobile {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  @include m.tablet {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @include m.laptop {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @include m.desktop {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+}

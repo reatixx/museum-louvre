@@ -1,0 +1,31 @@
+{
+  "name": "museum",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass": "sass src/scss/style.scss src/css/style.css",
+    "sass:min": "sass src/scss/style.scss src/css/style.min.css --style=compressed",
+    "watch:sass": "sass --watch src/scss/style.scss:src/css/style.css",
+    "postcss": "postcss src/css/style.css --use autoprefixer -o src/css/style.prefixed.css",
+    "styles": "npm run sass && npm run postcss",
+    "sprite": "node build-sprite.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.89.2",
+    "vite": "^7.0.6",
+    "vite-plugin-static-copy": "^3.1.1"
+  },
+  "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.16.1",
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.13.0",
+    "mapbox-gl": "^3.14.0",
+    "svg-sprite": "^2.0.4",
+    "swiper": "^11.2.10"
+  }
+}

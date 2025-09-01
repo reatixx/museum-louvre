@@ -1,0 +1,233 @@
+@use "../global/mixin" as m;
+@use "../global/variables" as v;
+@use "../global/viewports" as s;
+
+.site-list {
+  @include m.list;
+  @include m.flex-column;
+
+  @include m.adaptive(0, mobile) {
+    @include m.flex-column;
+    gap: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: v.$bg-black;
+    width: 100%;
+    height: 539px;
+    padding: 29px 34px 15px 35px;
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 100;
+    align-items: flex-start;
+  }
+
+  @include m.mobile {
+    @include m.flex-column;
+    gap: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: v.$bg-black;
+    width: 100%;
+    height: 539px;
+    padding: 29px 34px 15px 35px;
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 100;
+    align-items: flex-start;
+  }
+
+  @include m.tablet {
+    @include m.flex-column;
+    gap: 27px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: v.$bg-black;
+    width: 100%;
+    height: 862px;
+    padding: 36px 35px 15px 35px;
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 100;
+    align-items: flex-start;
+  }
+
+  @include m.laptop {
+    @include m.flex-column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 297px;
+    height: 585px;
+    background-color: v.$bg-black;
+    padding: 33px 34px 15px 34px;
+    gap: 22px;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 1000;
+    align-items: flex-start;
+  }
+
+  @include m.desktop {
+    @include m.flex-row;
+    max-width: 776px;
+    gap: 56px;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    position: static;
+    height: auto;
+    padding: 0;
+  }
+
+  &--open {
+    opacity: 1;
+    pointer-events: auto;
+
+    @include m.adaptive(0, mobile) {
+     transform: translateY(0); 
+    }
+
+    @include m.adaptive(mobile, laptop) {
+      transform: translateY(0);
+    }
+
+    @include m.laptop {
+      transform: translateX(0);
+    }
+  }
+
+  & li {
+    @include m.adaptive(0, desktop) {
+      &:has(.site-list__link) {
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background-image: url("/assets/img/icon/arrow-nav.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &:last-child {
+        display: none;
+        @include m.adaptive(mobile, laptop) {
+          display: block;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.site-list__link {
+  @include m.nav-link;
+
+  @include m.adaptive(0, mobile) {
+    width: 103px;
+  }
+
+  @include m.mobile {
+    width: 103px;
+  }
+
+  @include m.tablet {
+    width: 102px;
+  }
+
+  @include m.laptop {
+    width: 102px;
+  }
+
+  &:hover {
+    color: v.$gold;
+  }
+
+  &:focus {
+    color: v.$focus-text;
+  }
+}
+
+.site-list__burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: v.$white;
+  position: relative;
+  width: 32px;
+  height: 26px;
+  cursor: pointer;
+  transition: width 0.3s ease, height 0.3s ease;
+
+  @include m.desktop {
+    display: none;
+  }
+
+  .site-list__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+  }
+
+  .site-list__open {
+    opacity: 1;
+  }
+
+  .site-list__close {
+    opacity: 0;
+  }
+
+  &.active {
+    width: 24px;
+    height: 24px;
+
+    .site-list__open {
+      opacity: 0;
+    }
+
+    .site-list__close {
+      opacity: 1;
+    }
+  }
+}
+
+.site-list__open {
+  width: 32px;
+  height: 18px;
+}
+
+.site-list__close {
+  width: 24px;
+  height: 24px;
+}
+
+.site-list li:nth-last-child(-n+2) {
+  @include m.laptop {
+    display: none;
+  }
+
+  @include m.desktop {
+    display: none;
+  }
+}

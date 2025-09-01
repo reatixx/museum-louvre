@@ -1,0 +1,157 @@
+@use "../global/variables" as v;
+@use "../global/mixin" as m;
+
+.form {
+  @include m.flex-column;
+  color: v.$black;
+  padding: 0;
+  margin: 0;
+  transform: translate(0, -3px);
+}
+
+.form__container {
+  @include m.flex-column;
+
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 162px;
+    align-items: flex-start;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  min-width: 150px;
+
+  @include m.mobile {
+    min-width: 176px;
+  }
+
+  @include m.tablet {
+    min-width: 224px;
+  }
+
+  @include m.laptop {
+    min-width: 176px;
+    gap: 34px;
+  }
+
+  @include m.adaptive(mobile, laptop) {
+    &:first-child {
+      display: none;
+    }
+  }
+
+  @include m.tablet {
+    &:first-child {
+      display: none;
+    }
+  }
+
+  @include m.laptop {
+    &:first-child {
+      display: none;
+    }
+  }
+
+  @include m.desktop {
+    &:first-child {
+      display: block;
+    }
+  }
+
+  &--left {
+    @include m.flex-column;
+    justify-content: end;
+    align-items: flex-end;
+    padding-left: 25px;
+
+    @include m.adaptive(mobile, laptop) {
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      gap: 25px;
+    }
+
+    @include m.tablet {
+      align-items: flex-start;
+    }
+
+    @include m.laptop {
+      padding: 0;
+      align-items: center;
+    }
+  }
+}
+
+.form__list {
+  @include m.list;
+}
+
+.form__title {
+  @include m.amount;
+  margin: 0;
+  margin-bottom: 48px;
+  margin-left: 6px;
+
+  &--amount {
+    margin: 0 0 24px 127px;
+
+    @include m.mobile {
+      margin: 42px 0 22px;
+    }
+
+    @include m.tablet {
+      margin: 2px 0 41px;
+    }
+
+    @include m.laptop {
+      margin: 0 0 32px;
+    }
+
+    @include m.desktop {
+      margin: 0 0 28px 127px;
+    }
+  }
+}
+
+.form__legend {
+  padding: 0;
+
+  @include m.mobile {
+    text-align: center;
+  }
+}
+
+.form__total {
+  @include m.form-total;
+
+  @include m.mobile {
+    margin-top: 14px;
+    margin-bottom: 0px;
+  }
+
+  @include m.tablet {
+    margin: 13px 0 16px;
+  }
+
+  @include m.laptop {
+    align-self: baseline;
+    transform: translate(0, -10px);
+  }
+
+  @include m.desktop {
+    margin-top: 35px;
+    margin-bottom: 47px;
+  }
+}
+
+.form__button {
+  @include m.tickets-button;
+}

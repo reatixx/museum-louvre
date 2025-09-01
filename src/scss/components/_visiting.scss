@@ -1,0 +1,146 @@
+@use "../global/mixin" as m;
+@use "../global/variables" as v;
+
+.visiting {
+  background-color: v.$white;
+
+  &__wrapper {
+    margin-bottom: 75px;
+
+    @include m.mobile {
+      margin-bottom: 40px;
+    }
+
+    @include m.tablet {
+      margin-bottom: 81px;
+    }
+
+    @include m.laptop {
+      margin-bottom: 60px;
+    }
+
+    @include m.desktop {
+      margin-bottom: 75px;
+    }
+
+    & h2 {
+      @include m.title;
+      padding-bottom: 20px;
+      border-bottom: 3px solid v.$red;
+      margin: 40px 0 40px;
+
+      @include m.mobile {
+        margin: 40px 0 40px;
+        padding-bottom: 20px;
+      }
+
+      @include m.tablet {
+        margin: 39px 0 39px;
+        padding-bottom: 21px;
+      }
+
+      @include m.laptop {
+        padding-bottom: 20px;
+        margin: 60px 0 60px;
+      }
+
+      @include m.desktop {
+        padding-bottom: 25px;
+        margin: 75px 0 75px;
+      }
+    }
+  }
+
+  &__list {
+    @include m.list;
+    @include m.container(0 50px);
+    @include m.flex-column;
+    gap: 40px;
+
+    @include m.tablet {
+      @include m.container(0 56px);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 56px;
+    }
+
+    @include m.laptop {
+      @include m.container(0 108px);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 108px;
+    }
+
+    @include m.desktop {
+      @include m.list;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 75px 60px;
+    }
+  }
+
+  &__item {
+    & h3 {
+      @include m.tours-title;
+      position: relative;
+      padding-bottom: 18px;
+      width: 100%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 150px;
+        height: 2px;
+        background-color: v.$red;
+        transition: width 0.3s ease;
+
+        @include m.desktop {
+          width: 300px;
+        }
+      }
+    }
+
+    &:hover h3::after {
+      width: 100%;
+    }
+
+    & span:nth-of-type(1) {
+      @include m.first-span;
+    }
+
+    & span:nth-of-type(2) {
+      @include m.second-span;
+    }
+  }
+
+  &__text {
+    @include m.flex-column;
+    align-items: start;
+
+    & h3 {
+      margin: 25px 0 10px;
+      padding-bottom: 12px;
+    }
+
+    & span:last-child {
+      margin-top: 10px;
+    }
+  }
+
+  &__img {
+    width: 280px;
+    height: 180px;
+
+    @include m.laptop {
+      width: 330px;
+      height: 215px;
+    }
+
+    @include m.desktop {
+      width: 440px;
+      height: 285px;
+    }
+  }
+}

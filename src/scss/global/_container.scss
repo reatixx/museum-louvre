@@ -1,0 +1,6 @@
+@use "../global/viewports" as size;
+@use "../global/mixin" as m;
+
+.container {
+  @include m.container;
+}

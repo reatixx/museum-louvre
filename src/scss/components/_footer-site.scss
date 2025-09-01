@@ -1,0 +1,44 @@
+@use "../global/mixin" as m;
+@use "../global/variables" as v;
+
+.footer-site {
+  @include m.list;
+  @include m.flex-column;
+  max-height: 170px;
+  column-gap: 173px;
+  align-items: start;
+  margin-top: 2px;
+
+  @include m.mobile {
+    max-height: 100px;
+    column-gap: 88px;
+    row-gap: 29px;
+  }
+
+  @include m.tablet {
+    max-height: 150px;
+    column-gap: 185px;
+    row-gap: 21px;
+    margin-top: 8px;
+  }
+
+  @include m.laptop {
+    column-gap: 123px;
+    row-gap: 21px;
+  }
+
+  @include m.desktop {
+    row-gap: 21px;
+  }
+}
+
+.footer-site__link {
+  @include m.footer-text;
+  color: v.$white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: v.$gold;
+  }
+}

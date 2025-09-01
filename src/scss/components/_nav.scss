@@ -1,0 +1,47 @@
+@use "../global/mixin" as m;
+@use "../global/viewports" as s;
+
+.nav {
+  position: relative;
+  @include m.adaptive(0, mobile) {
+    padding: 30px 0 34px;
+  }
+  @include m.mobile {
+    padding: 30px 0 34px;
+  }
+  @include m.tablet {
+    padding: 44px 0 34px;
+  }
+  @include m.laptop {
+    padding: 49px 0 50px;
+  }
+  @include m.desktop {
+    padding: 60px 0;
+  }
+}
+
+.nav__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__link {
+  @include m.nav-logo;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  & {
+    text-transform: uppercase;
+    align-items: flex-start;
+  }
+}
+
+.nav__svg {
+  @include m.logo;
+}
+
+.nav__text {
+  @include m.nav-logo;
+}
